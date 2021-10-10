@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>또박투어</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel = "shotcut icon" href = "images/favicon.ico">
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/9448297042.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="alone_bg"></div>
+        <div id="notice_bg"></div>
+        <div id="footer_bg"></div>
+        <div id="wrapper">
+            <!-- 메인페이지 -->
+            <div id="main">
+                <header>
+                    <div id="top_nav">
+                        <ul>
+                            <li><a href="login/index.html">로그아웃</a></li>
+                            <li><a href="#none">고객센터</a></li>
+                            <li><a href="#none">한국어 ▼</a></li>
+                        </ul>
+                    </div>
+                    <div id="logo">
+                        <a href="index.html"><img src="images/LOGO.png" alt="LOGO"></a>
+                    </div>
+                    <div id="navarea">
+                        <div id="nav">
+                            <ul>
+                                <li><a href="result/index.html">해외여행</a></li>
+                                <li><a href="result/index.html">국내여행</a></li>
+                                <li><a href="result/index.html">항공</a></li>
+                                <li><a href="result/index.html">숙박</a></li>
+                                <li><a href="event/index.html">기획전</a></li> 
+                                <li><a href="event/index.html">이벤트</a></li>
+                                <li><a href="#none">공지사항</a></li>
+                            </ul>
+                            <div>
+                                <input type="text">
+                                <a href="#none"><img src="images/look.png" alt="look"></a>
+                            </div>
+                        </div>
+                        <div id="myarea">
+                            <div id="my">
+                                <a href="login/index.html"><img src="images/profile.png" alt="profile"></a>
+                                <a href="login/index.html"><p>나의여행</p></a>
+                            </div>
+                            <div id="cart">
+                                <a href="login/index.html"><img src="images/cart.png" alt="cart"></a>
+                                <a href="login/index.html"><p>장바구니</p></a>
+                            </div>
+                            <div id="cart_num">
+                                <p>2</p>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div id="banner">
+                    <div id="banner_container">
+                        <div class="inner">
+                            <a href="event/event5/index.html">
+                                <img src="images/banner5.png" alt="banner5">
+                            </a>    
+                        </div>
+                        <div class="inner">
+                            <a href="event/event1/index.html">
+                                <img src="images/banner1.png" alt="banner1">
+                            </a>    
+                        </div>
+                        <div class="inner">
+                            <a href="event/event2/index.html">
+                                <img src="images/banner2.png" alt="banner2">
+                            </a>    
+                        </div>
+                        <div class="inner">
+                            <a href="event/event3/index.html">
+                                <img src="images/banner3.png" alt="banner3">
+                            </a>    
+                        </div>
+                        <div class="inner">
+                            <a href="event/event4/index.html">
+                                <img src="images/banner4.png" alt="banner4">
+                            </a>    
+                        </div>
+                        <div class="inner">
+                            <a href="event/event5/index.html">
+                                <img src="images/banner5.png" alt="banner5">
+                            </a>    
+                        </div>
+                        <div class="inner">
+                            <a href="event/event1/index.html">
+                                <img src="images/banner1.png" alt="banner1">
+                            </a>    
+                        </div>
+                    </div>
+                    <div id="banner_arrow">
+                        <img src="images/prev.png" alt="prev" class="bannerprev">
+                        <img src="images/next.png" alt="next" class="bannernext">
+                    </div>
+                    <div id="play">
+                        <div class="playbg" id="play_num"><span>1</span> / 5 </div>
+                        <div class="playbg" id="play_btn"></div>
+                    </div>
+                </div>
+                <div id="searcharea">
+                    <div id="search">
+                        <div>
+                            <input type="text" name="" id="" placeholder="어디로 떠나시겠어요?">
+                        </div>
+                        <div id="search_date">
+                            <input type="text" name="" id="">
+                            <p><span>2021년 12월 21일</span> 부터 <span>2021년 12월 30일</span> 까지</p>
+                        </div>
+                        <div class="cls1">
+                            <a href="#none"><div class="choice solo">나홀로</div></a>
+                            <a href="#none"><div class="choice budy on">친구와</div></a>
+                            <a href="#none"><div class="choice lover">연인과</div></a>
+                            <a href="#none"><div class="choice family">가족과</div></a>
+                            <div id="member">
+                                <input type="number"><span> 명</span>
+                            </div>
+                        </div>
+                        <div class="cls2">
+                            <a href="#none"><div class="choice package on">패키지</div></a>
+                            <a href="#none"><div class="choice airplane">항공권</div></a>
+                            <a href="#none"><div class="choice hotel">숙박권</div></a>
+                        </div>
+                        <div id="search_btn">
+                            <a href="result/index.html">
+                                <button>검색하기</button>
+                                <img src="images/search_btn.png" alt="search_btn">
+                            </a>
+                        </div>
+                    </div>
+                    <div id="ttoback">
+                        <div id="main_img1">
+                            <img src="images/1.png" alt="1">
+                        </div>
+                        <div id="main_img2">
+                            <img src="images/10.png" alt="10">
+                        </div>
+                        <div id="main_img3">
+                            <img src="images/11.png" alt="11">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 맞춤형 패키지 -->
+            <div id="custom">
+                <div class="customh1">
+                    <h1>고객님을 위한 맞춤형 패키지 여행</h1>
+                </div>
+                <div id="customimg">
+                    <div class="custombox">
+                        <a href="#none">
+                            <img src="images/삿포로.jpg" alt="삿포로">
+                            <p class="textbox">눈이 녹으면 더 아름다운<br><span class="cstplace">훗카이도 삿포로<br>890,000~</span></p>
+                        </a>
+                    </div>
+                    <div class="custombox">
+                        <a href="#none">
+                            <img src="images/홍콩.jpg" alt="홍콩">
+                            <p class="textbox">화양연화 양조위가 걸었던 거리<br><span class="cstplace">홍콩<br>650,000~</span></p>
+                        </a>
+                    </div>
+                    <div class="custombox">
+                        <a href="#none">
+                            <img src="images/순천만.jpg" alt="순천만">
+                            <p class="textbox">살랑살랑 바람부는 갈대밭<br><span class="cstplace">순천만<br>240,000~</span></p>
+                        </a>
+                    </div>
+                    <div class="custombox">
+                        <a href="#none">
+                            <img src="images/대만.jpg" alt="대만">
+                            <p class="textbox">야시장 먹킷리스트 꺼낼 시간<br><span class="cstplace">대만<br>580,000~</span></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 여행지 추천 -->
+            <div id="recommend">
+                <!-- 해외추천PICK -->
+                <div id="abroad">
+                    <h1 style="text-align:center; margin-top: 60px;">해외 추천여행 PICK</h1>
+                    <nav id="abroadbox">
+                        <ul>
+                            <li>
+                                <label class="on">동남아시아</label>
+                                <div id="abtab-content1" class="content">
+                                    <a href="#none">
+                                        <div class="content-box">
+                                            <div class="reco abroadimg1"></div>
+                                            <p class="place">[푸켓]</p>
+                                            <p class="abroadprice">1,640,000~</p>
+                                            <p class="tage">#3박5일 #피피섬 #팡아만국립공원</p>
+                                        </div>
+                                    </a>
+                                    <a href="#none">
+                                        <div class="content-box">
+                                            <div class="reco abroadimg2"></div>
+                                            <p class="place">[코타키나 발루]</p>
+                                            <p class="abroadprice">1,230,000~</p>
+                                            <p class="tage">#4박6일 #만따나니섬 #반딧불투어</p>
+                                        </div>
+                                    </a>
+                                    <a href="#none">
+                                        <div class="content-box">
+                                            <div class="reco abroadimg3"></div>
+                                            <p class="place">[보라카이]</p>
+                                            <p class="abroadprice">1,290,000~</p>
+                                            <p class="tage">#3박5일 #호핑투어 #스톤마사지</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <label>중국/홍콩</label>
+                                <div id="abtab-content2" class="content">
+                                    <a href="#none">
+                                        <div class="content-box">
+                                            <div class="reco abroadimg4"></div>
+                                            <p class="place">[상하이]</p>
+                                            <p class="abroadprice">1,100,000~</p>
+                                            <p class="tage">#4일 #동방명주탑 #상하이타워</p>
+                                        </div>
+                                    </a>
+                                    <a href="#none">
+                                        <div class="content-box">
+                                            <div class="reco abroadimg5"></div>
+                                            <p class="place">[홍콩/마카오]</p>
+                                            <p class="abroadprice">1,599,000~</p>
+                                            <p class="tage">#3박4일 #홍콩해양공원 #디즈니랜드리조트</p>
+                                        </div>
+                                    </a>
+                                    <a href="#none">
+                                        <div class="content-box">
+                                            <div class="reco abroadimg6"></div>
+                                            <p class="place">[하이난]</p>
+                                            <p class="abroadprice">1,549,000~</p>
+                                            <p class="tage">#4박5일 #삥랑빌리지 #수상스포츠</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <label>일본</label>
+                                <div id="abtab-content3" class="content">
+                                    <a href="#none">
+                                        <div class="content-box">
+                                            <div class="reco abroadimg7"></div>
+                                            <p class="place">[도쿄]</p>
+                                            <p class="abroadprice">1,440,000~</p>
+                                            <p class="tage">#4박5일 #도쿄스카이트리 #신주쿠교엔</p>
+                                        </div>
+                                    </a>
+                                    <a href="#none">
+                                        <div class="content-box">
+                                            <div class="reco abroadimg8"></div>
+                                            <p class="place">[오사카]</p>
+                                            <p class="abroadprice">1,120,000~</p>
+                                            <p class="tage">#3박4일 #오사카성 #우메다공중정원</p>
+                                        </div>
+                                    </a>
+                                    <a href="#none">
+                                        <div class="content-box">
+                                            <div class="reco abroadimg9"></div>
+                                            <p class="place">[오키나와]</p>
+                                            <p class="abroadprice">1,249,000~</p>
+                                            <p class="tage">#3박4일 #슈리성터 #마에하마비치</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <label>유럽</label>
+                                <div id="abtab-content4" class="content">
+                                    <a href="#none">
+                                        <div class="content-box">
+                                            <div class="reco abroadimg10"></div>
+                                            <p class="place">[이탈리아]</p>
+                                            <p class="abroadprice">1,670,000~</p>
+                                            <p class="tage">#3박5일 #트레비분수 #콜로세움</p>
+                                        </div>
+                                    </a>
+                                    <a href="#none">
+                                        <div class="content-box">
+                                            <div class="reco abroadimg11"></div>
+                                            <p class="place">[체코]</p>
+                                            <p class="abroadprice">1,230,000~</p>
+                                            <p class="tage">#4박6일 #프라하 #올로모우츠</p>
+                                        </div>
+                                    </a>
+                                    <a href="#none">
+                                        <div class="content-box">
+                                            <div class="reco abroadimg12"></div>
+                                            <p class="place">[노르웨이]</p>
+                                            <p class="abroadprice">1,290,000~</p>
+                                            <p class="tage">#3박5일 #스타방에르 #오슬로</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <label>남태평양</label>
+                                <div id="abtab-content5" class="content">
+                                    <a href="#none">
+                                        <div class="content-box">
+                                            <div class="reco abroadimg13"></div>
+                                            <p class="place">[괌]</p>
+                                            <p class="abroadprice">1,640,000~</p>
+                                            <p class="tage">#3박5일 #투몬비치 #피시아이마린파크</p>
+                                        </div>
+                                    </a>
+                                    <a href="#none">
+                                        <div class="content-box">
+                                            <div class="reco abroadimg14"></div>
+                                            <p class="place">[사이판]</p>
+                                            <p class="abroadprice">1,230,000~</p>
+                                            <p class="tage">#4박6일 #1일자유 #캐피톨힐</p>
+                                        </div>
+                                    </a>
+                                    <a href="#none">
+                                        <div class="content-box">
+                                            <div class="reco abroadimg15"></div>
+                                            <p class="place">[호주]</p>
+                                            <p class="abroadprice">1,290,000~</p>
+                                            <p class="tage">#3박5일 #시드니시 #멜버른</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <label>미주/하와이</label>
+                                <div id="abtab-content6" class="content">
+                                    <a href="#none">
+                                        <div class="content-box">
+                                            <div class="reco abroadimg16"></div>
+                                            <p class="place">[샌프란시스코]</p>
+                                            <p class="abroadprice">1,640,000~</p>
+                                            <p class="tage">#3박5일 #앨커트래즈섬 #골든게이트교</p>
+                                        </div>
+                                    </a>
+                                    <a href="#none">
+                                        <div class="content-box">
+                                            <div class="reco abroadimg17"></div>
+                                            <p class="place">[하와이]</p>
+                                            <p class="abroadprice">1,230,000~</p>
+                                            <p class="tage">#4박6일 #와이키키비치 #마노아폭포</p>
+                                        </div>
+                                    </a>
+                                    <a href="#none">
+                                        <div class="content-box">
+                                            <div class="reco abroadimg18"></div>
+                                            <p class="place">[캐나다]</p>
+                                            <p class="abroadprice">1,290,000~</p>
+                                            <p class="tage">#3박5일 #나이아가라폭포시티 #벤쿠버</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- 국내추천PICK -->
+                <div id="domestic">
+                <h1 style="text-align:center; margin-top: 40px;">국내 추천여행 PICK</h1>
+                <nav id="domesticbox">
+                    <ul>
+                        <li>
+                            <label class="on">제주도</label>
+                            <div id="dmttab-content1" class="content">
+                                <a href="#none">
+                                    <div class="content-box">
+                                        <div class="reco domesticimg1"></div>
+                                        <p class="place">[우도]</p>
+                                        <p class="domesticprice">499,000~</p>
+                                        <p class="tage">#제주3일 #우도백악관펜션 #빛의벙커</p>
+                                    </div>
+                                </a>
+                                <a href="#none">
+                                    <div class="content-box">
+                                        <div class="reco domesticimg2"></div>
+                                        <p class="place">[차귀도]</p>
+                                        <p class="domesticprice">499,000~</p>
+                                        <p class="tage">#제주3일 #배낚시 #환상숲선택</p>
+                                    </div>
+                                </a>
+                                <a href="#none">
+                                    <div class="content-box">
+                                        <div class="reco domesticimg3"></div>
+                                        <p class="place">[한라산]</p>
+                                        <p class="domesticprice">299,000~</p>
+                                        <p class="tage">#1박2일패키지 #백록담정상 #사우나</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <label>강원도</label>
+                            <div id="dmttab-content2" class="content">
+                                <a href="#none">
+                                    <div class="content-box">
+                                        <div class="reco domesticimg4"></div>
+                                        <p class="place">[속초]</p>
+                                        <p class="domesticprice">279,000~</p>
+                                        <p class="tage">#2박3일 #영금정 #아바이마을</p>
+                                    </div>
+                                </a>
+                                <a href="#none">
+                                    <div class="content-box">
+                                        <div class="reco domesticimg5"></div>
+                                        <p class="place">[강릉]</p>
+                                        <p class="domesticprice">340,000~</p>
+                                        <p class="tage">#2박3일 #암목해변 #안반데기</p>
+                                    </div>
+                                </a>
+                                <a href="#none">
+                                    <div class="content-box">
+                                        <div class="reco domesticimg6"></div>
+                                        <p class="place">[영월]</p>
+                                        <p class="domesticprice">230,000~</p>
+                                        <p class="tage">#2박3일 #별마로천문대 #청령포</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <label>경기도</label>
+                            <div id="dmttab-content3" class="content">
+                                <a href="#none">
+                                    <div class="content-box">
+                                        <div class="reco domesticimg7"></div>
+                                        <p class="place">[용인]</p>
+                                        <p class="domesticprice">239,000~</p>
+                                        <p class="tage">#1박2일 #한국민속촌 #에버랜드</p>
+                                    </div>
+                                </a>
+                                <a href="#none">
+                                    <div class="content-box">
+                                        <div class="reco domesticimg8"></div>
+                                        <p class="place">[가평]</p>
+                                        <p class="domesticprice">279,000~</p>
+                                        <p class="tage">#1박2일 #아침고요수목원 #레일바이크</p>
+                                    </div>
+                                </a>
+                                <a href="#none">
+                                    <div class="content-box">
+                                        <div class="reco domesticimg9"></div>
+                                        <p class="place">[양평]</p>
+                                        <p class="domesticprice">340,000~</p>
+                                        <p class="tage">#2박3일 #용문사 #중미산자연휴양림</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <label>경상도</label>
+                            <div id="dmttab-content4" class="content">
+                                <a href="#none">
+                                    <div class="content-box">
+                                        <div class="reco domesticimg10"></div>
+                                        <p class="place">[부산]</p>
+                                        <p class="domesticprice">320,000~</p>
+                                        <p class="tage">#2박3일 #감천문화마을 #해운대인근호텔</p>
+                                    </div>
+                                </a>
+                                <a href="#none">
+                                    <div class="content-box">
+                                        <div class="reco domesticimg11"></div>
+                                        <p class="place">[포항]</p>
+                                        <p class="domesticprice">170,000~</p>
+                                        <p class="tage">#1박2일 #호미곶해맞이광장 #영일대해수욕장</p>
+                                    </div>
+                                </a>
+                                <a href="#none">
+                                    <div class="content-box">
+                                        <div class="reco domesticimg12"></div>
+                                        <p class="place">[통영]</p>
+                                        <p class="domesticprice">390,000~</p>
+                                        <p class="tage">#3박4일 #사량도 #스카이라인루지통영</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <label>충청도</label>
+                            <div id="dmttab-content5" class="content">
+                                <a href="#none">
+                                    <div class="content-box">
+                                        <div class="reco domesticimg13"></div>
+                                        <p class="place">[단양]</p>
+                                        <p class="domesticprice">240,000~</p>
+                                        <p class="tage">#2박3일 #패러글라이딩 #도담상봉</p>
+                                    </div>
+                                </a>
+                                <a href="#none">
+                                    <div class="content-box">
+                                        <div class="reco domesticimg14"></div>
+                                        <p class="place">[제천]</p>
+                                        <p class="domesticprice">320,000~</p>
+                                        <p class="tage">#3박4일 #모노레일체험 #청풍호유람선</p>
+                                    </div>
+                                </a>
+                                <a href="#none">
+                                    <div class="content-box">
+                                        <div class="reco domesticimg15"></div>
+                                        <p class="place">[아산]</p>
+                                        <p class="domesticprice">350,000~</p>
+                                        <p class="tage">#3박4일 #피나클랜드 #지중해마을</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                </div>
+            </div>
+
+            <!-- 힘내라 대한민국 -->
+            <div id="fighting">
+                <p><img src="images/korea1.png" id="korea"></p>
+            </div>
+
+            <!-- 테마별 여행추천 -->
+            <div id="theme">
+                <div id="themep"><h1>테마별 여행 상품 추천</h1></div>
+                <div id="themebox">
+                    <a href="#none">
+                        <div class="themebox1">
+                            <img src="images/호캉스.jpg" ><br>
+                            <p id="themet"><span>휴양지</span><br>바쁜일상에<br>지치진 않았나요?</p>
+                        </div>
+                    </a>
+                    <a href="#none">
+                        <div class="themebox1">
+                            <img src="images/쇼핑.JPG" ><br>
+                            <p id="themet"><span>쇼핑</span><br>눈으로 즐기고<br>두 손 가득 행복을 느끼자!</p>
+                        </div>
+                    </a>
+                    <a href="#none">
+                        <div class="themebox1">
+                            <img src="images/식도락.JPG">
+                            <p id="themet"><span>식도락</span><br>먹는 즐거움이 짜릿해!<br>맛집 찾아 삼만리!</p>
+                        </div>
+                    </a>
+                    <a href="#none">
+                        <div class="themebox1">
+                            <img src="images/어트랙션.JPG" ><br>
+                            <p id="themet"><span>어트랙션</span><br>활력 충전을 위한<br>재미를 찾아보자!</p>
+                        </div>
+                    </a>
+                    <a href="#none">
+                        <div class="themebox1">
+                            <img src="images/문화재.JPG"><br>
+                            <p id="themet"><span>문화재</span><br>그 나라를 알고싶다면<br>역사여행을 떠나보자!</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 혼여행 경주 -->
+            <div id="alone">
+                <div id="alonebox">
+                    <div id="aloneboxl">
+                        <img src="images/혼여행경주1.JPG"  class="alonem"> 
+                        <a href="#none"><div class="hash" id="hash1">#야경맛집</div></a>
+                        <a href="#none"><div class="hash" id="hash2">#나홀로여행</div></a>
+                        <a href="#none"><div class="hash" id="hash3">#뚜벅이</div></a>
+                    </div>
+                <div id="alonebox2"><a href="#none"><P id="alonet">요즘 대세! 혼여행 명소<br>경주로 뚜벅뚜벅~</P></a>
+                                    <P id="alonets">밤하늘 수 놓은 별처럼<br>아름다운 경주로 떠나보는 건 어떨까요?</P>
+                                    <P id="alonett">79,000원 부터~</P></div>
+                <div id="alonebox3"><a href="#none"><img src="images/혼여행경주2.JPG" class="aloner"></a>
+                                    <a href="#none"><img src="images/혼여행경주3.JPG" class="aloner"></a></div>
+                </div>
+            </div>
+
+            <!-- MBTI별 여행추천 -->
+            <div id="mbti">
+                <div id="mbti_title"><h1>나에게 딱 맞는 MBTI별 여행지 추천</h1></div>
+                <div id="mbti_box">
+                    <div id="mbtis">
+                        <a href="#none"><img src="images/ESFJ.png" alt="ESFJ" id="esfj"></a>
+                        <a href="#none"><img src="images/INTJ.png" alt="INTJ" id="intj"></a>
+                        <a href="#none"><img src="images/ESFP.png" alt="ESFP" id="esfp"></a>
+                        <a href="#none"><img src="images/INFP.png" alt="INFP" id="infp"></a>
+                        <a href="#none"><img src="images/ENTP.png" alt="ENTP" id="entp"></a>
+                        <a href="#none"><img src="images/INTJ.png" alt="INTJ" id="infj"></a>
+                    </div>
+                    <div id="mbti_btn">
+                        <img src="images/prev1.png" alt="prev1" class="mbti_prev">
+                        <img src="images/next1.png" alt="next1" class="mbti_next">
+                    </div>
+                </div>
+            </div>
+
+            <!-- SNS -->
+            <div id="sns">
+                <div id="video">
+                    <div id="playbtn">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                </div>
+
+                <div id="charimg1">
+                    <img src="images/14.png" alt="14">
+                </div>
+                <div id="snsIcon">
+                    <a href="#none"><i class="fab fa-youtube" ></i></a><br>
+                    <a href="#none">&nbsp<i class="fab fa-facebook"></i></a><br>
+                    <a href="#none">&nbsp<i class="fab fa-instagram"></i></a><br>
+                    <a href="#none">&nbsp<i class="fab fa-twitter"></i></a>
+                </div>
+            </div> 
+
+            <!-- 공지사항/이벤트 등 -->
+            <div id="board">
+                <div id="boardbox1">
+                    <div id="noti1">
+                        <p>
+                            공지사항<br>
+                            <hr>
+                            <a href="#none">고객센터 전화상담 임시 중단 안내<br></a>
+                            <a href="#none">또박TV 유튜브 구독 당첨자 발표<br></a>
+                            <a href="#none">또박투어 가로수길 팝업스토어 오픈<br></a>
+                            <a href="#none">또박투어 회원 등급 변경 안내<br></a>
+                        </p> 
+                    </div>
+                    
+                    <div id="noti2">
+                        <p>
+                            이벤트<br>
+                            <hr>    
+                            <a href="event/event2/index.html">캐리어 증정 또바기 퀴즈 이벤트<br></a>
+                            <a href="event/event4/index.html">베스트 후기 선정되면 적립금 20만원…<br></a>
+                            <a href="event/event1/index.html">또박투어 첫 여행 10% 할인!<br></a>
+                            <a href="event/event3/index.html">코로나19 백신 접종 인증하고 할인쿠…<br></a>
+                        </p>
+                    </div>
+                    
+                    <div id="noti3">
+
+                        <p>
+                            패키지 기획전<br>
+                            <hr>    
+                            <a href="#none">[골프투어] 사이판에서 즐기는 여유로운 무제한 골프! 사이판 하얏트 호텔 7박 8일...<br></a>
+                            <a href="#none">[프라이빗투어] 럭셔리 풀빌라에서 가족과의 호화로운 휴가! 발리 4박 6일 일정으...<br></a>
+                        </p>
+                    </div>
+                </div>
+                <div id="boardbox2"><a href="#none">회원혜택</a></div>
+                <div id="boardbox2"><a href="#none">고객센터</a></div>
+                <div id="boardbox2"><a href="#none">Q & A</a></div>
+                <div id="boardbox2"><a href="#none">1:1 상담</a></div>
+                <div id="boardbox2"><a href="#none">취소안내</a></div>
+                <div id="boardbox2"><a href="#none">예약안내</a></div>
+                <div id="boardbox2"><a href="#none">제휴문의</a></div>
+                <div id="boardbox2"><a href="#none">광고문의</a></div>
+
+                <div id="notibutn">
+                    <a href="#none">회사소개</a>
+                    <a href="#none">채용정보</a>
+                    <a href="#none">이용약관</a>
+                    <a href="#none">여행약관</a>
+                    <span id="bold"><a href="#none">개인정보처리방침</a></span>
+                    <a href="#none">여행자보험</a>
+                    <a href="#none">마케팅제휴문의</a>
+                    <a href="#none">회원탈퇴</a>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <footer>
+                <div id="footer">
+                    <div id="charimg2">
+                        <img src="images/3.png" alt="3">
+                    </div>
+                    <div id="footlogo">
+                        <img src="images/typelogo3.png" alt="typelogo3">
+                    </div>
+
+                    <div id="foot1">
+                        또박(주) 대표이사 김은별<br>
+                        경기도 수원시 장안구 정조로 940-1<br>
+                        (영화동, 연세IT미래교육원 빌딩) <br>
+                        Tel : 031-256-2662<br>
+                        Fax : 031-256-2663<br>
+                    </div>
+
+                    <div id="foot2">
+                        사업자번호 : 479-87-00056 <br>
+                        개인정보보호책임자 : 김한나 tladhgks@naver.com <br>
+                        Copyright © Ttoback 2020-2021 All Rights Reserved.
+                    </div>
+
+                    <div id="foot3">
+                        상담문의 <br>
+                        <div id="callnum">1544-1234</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div id="top"><a href="#">TOP</a></div>
+        <div id="index_bar">
+            <ul>
+                <li>
+                    <p>여행검색</p>
+                    <a href="#main">
+                        <div></div>
+                    </a>
+                </li>
+                <li>
+                    <p>맞춤형<br>
+                        패키지</p>
+                    <a href="#custom">
+                        <div></div>
+                    </a>
+                </li>
+                <li>
+                    <p>추천<br>
+                        PICK</p>
+                    <a href="#recommend">
+                        <div></div>
+                    </a>
+                </li>
+                <li>
+                    <p>테마별<br>
+                        여행</p>
+                    <a href="#theme">
+                        <div></div>
+                    </a>
+                </li>
+                <li>
+                    <p>혼여행<br>
+                        추천</p>
+                    <a href="#alone">
+                        <div></div>
+                    </a>
+                </li>
+                <li>
+                    <p>MBTI별<br>
+                        여행지</p>
+                    <a href="#mbti">
+                        <div></div>
+                    </a>
+                </li>
+                <li>
+                    <p>또박TV</p>
+                    <a href="#sns">
+                        <div></div>
+                    </a>
+                </li>
+            </ul>
+            <p>
+                바로가기
+            </p>
+            <div id=cover></div>
+        </div>
+        <div id="popup">
+            <img src="images/popup.png" alt="popup">
+            <button>확인하고 또박투어 둘러보기</button>
+        </div>
+    </div>
+</body>
+</html>

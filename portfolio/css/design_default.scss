@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+$main_color: #141414;
+$point_color: #6CFF84;
+
+#wrapper{
+    width: 100%;
+}
+#scroll{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: bg 3s ease-in-out normal 1;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 99999;
+}
+@keyframes bg{
+    from{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+#scroll img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    animation: blink 1.2s ease-in-out normal 2;
+    opacity: 0;
+}
+@keyframes blink{
+    from{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+#design{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+#design nav{
+    position: fixed;
+    width: 1200px;
+    top: 43px;
+    left: 180px;
+    z-index: 998;
+}
+#design nav li{
+    float: left;
+    margin-right: 60px;
+}
+#design nav h3{
+    padding: 5px 15px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Noto Sans KR';
+}
+#design nav h3:hover{
+    color: white;
+    background-color: $main_color;
+}
+#design nav li:first-child h3:hover{
+    color: $main_color;
+    background-color: $point_color;
+}
+#design nav h3.on{
+    color: white;
+    background-color: $main_color;
+}
+.project>a{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.info h2, p, td{
+    font-family: 'Noto Sans KR';
+}
+.info h2{
+    position: relative;
+    width: 100%;
+    line-height: 1.2;
+    font-weight: 800;
+}
+.sub_title{
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.6;
+}
+.info h2 span{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    font-size: 14px;
+    opacity: 0.3;
+    font-weight: 600;
+}
+h2~.p2{
+    margin: 15px 0 15px;
+    text-align: justify;
+}
+.title{
+    width: 70px;
+    font-weight: 700;
+    vertical-align: top;
+}
+td{
+    padding-bottom: 10px;
+}
+.project.on .inner{
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.project.on .vscroll{
+    animation: blink 1.2s ease-in-out normal 2;
+}
+@keyframes blink{
+    from{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+.vscroll img{
+    width: 60px;
+}

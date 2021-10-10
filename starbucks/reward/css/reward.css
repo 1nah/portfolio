@@ -1,0 +1,153 @@
+#wrapper {
+  width: 100%;
+  height: 3080px;
+}
+
+#reward {
+  width: 1280px;
+  margin: 0 auto;
+  height: 2420px;
+  padding-top: 100px;
+}
+
+#title {
+  margin: 40px 0 0 40px;
+}
+
+.box {
+  width: 1200px;
+  margin: 20px 40px;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  overflow: hidden;
+}
+
+.intro {
+  background: url(../images/bg.png) no-repeat;
+  background-size: cover;
+  background-position: 0% 30%;
+  height: 340px;
+}
+
+#bg > * {
+  color: white;
+}
+
+#bg {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 80px;
+  width: 100%;
+  height: 100%;
+}
+
+.intro img {
+  width: 50px;
+}
+
+h1 {
+  margin: 10px 0;
+}
+
+h1 span {
+  font-size: 28px;
+  color: white;
+  font-weight: 400;
+}
+
+#text {
+  width: 1200px;
+  height: 320px;
+  background-color: #262626;
+  padding-top: 80px;
+}
+
+#text > * {
+  color: white;
+}
+
+#text .p2 {
+  font-weight: 200;
+}
+
+.info ul {
+  width: 1040px;
+  height: 840px;
+  margin: 80px;
+}
+
+.info li {
+  width: 33.33333%;
+  float: left;
+}
+
+.info img {
+  width: 260px;
+  margin: 10px 0 60px;
+}
+
+.include {
+  width: 300px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #EFEFEF;
+  line-height: 45px;
+  margin: 0 auto 20px;
+}
+
+.include span {
+  font-weight: 600;
+}
+
+.info .p4 {
+  color: #007042;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+#btn {
+  clear: both;
+  margin: 80px auto;
+}
+
+#btn button {
+  margin: 0 10px;
+}
+
+#note {
+  width: 1200px;
+  margin: 40px;
+}
+
+#note ul li {
+  height: 30px;
+  line-height: 30px;
+  margin-left: 20px;
+}
+
+#note ul li::before {
+  content: "\2022";
+  color: #007042;
+  font-weight: bold;
+  float: left;
+  width: 14px;
+  margin: 2px 0 0 -15px;
+}
+
+#note button {
+  line-height: 10px;
+  font-size: 10px;
+  background-color: #262626;
+  color: white;
+  border: none;
+  margin-left: 5px;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+#note button:hover {
+  opacity: 0.7;
+}
+/*# sourceMappingURL=reward.css.map */

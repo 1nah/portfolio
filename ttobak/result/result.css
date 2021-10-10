@@ -1,0 +1,437 @@
+#wrapper{
+    width: 100%;
+}
+header{
+    width: 1280px;
+    margin: 0 auto;
+}
+#result_bg{
+    width: 100%;
+    height: fit-content;
+    background-color: #F6F6F6;
+    padding-bottom: 20px;
+}
+#result_top{
+    width: 100%;
+    height: 80px;
+    background-color: #21CC90;
+}
+#result{
+    width: 1280px;
+    height: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 옵션 선택 */
+#select button, #filter button{
+    height: 32px;
+    border-radius: 16px;
+    border: 1px solid #21CC90;
+    color: #21CC90;
+    cursor: pointer;
+    padding: 0 12px;
+    margin: 0 5px 10px 0;
+    background-color: white;
+}
+#select button.on, #filter button{
+    background-color: #21CC90;
+    color: white;
+}
+#result button img{
+    width: 10px;
+}
+#reset.on>img{
+    width: 14px;
+    padding: 4px 0 0 0;
+}
+#selected button{
+    display: none;
+    float: left;
+}
+#selected button.selected{
+    display: block;
+}
+#reset.on{
+    display: block;
+}
+
+/* 검색영역 */
+#search{
+    width: 1280px;
+    height: 120px;
+    margin-top: -80px;
+    padding: 40px 60px 0;
+}
+#search li{
+    float: left;
+    margin-right: 20px;
+}
+#search .p1{
+    height: 60px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 1px 1px 8px 0px #0000001A;
+    margin-right: 10px;
+    line-height: 60px;
+    padding: 0 35px;
+    float: left;
+}
+#search .p2{
+    color: white;
+    font-weight: 600;
+    float: left;
+    margin-top: 10px;
+}
+/* 옵션영역 */
+#select{
+    width: 100000px;
+    height: 100%;
+    position: absolute;
+    top: 120px;
+    right: 880px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 8px 0px #0000001A;
+    padding: 40px 60px;
+}
+#select ul{
+    float: right;
+    width: 300px;
+    height: 1280px;
+}
+#find{
+    font-size: 24px;
+    font-weight: 600;
+}
+#find span{
+    color: #21CC90;
+}
+#select li{
+    clear: both;
+    margin-bottom: 40px;
+}
+#select li.input{
+    height: 74px;
+}
+#select .p1{
+    margin-bottom: 10px;
+}
+#select input{
+    display: block;
+    width: 80px;
+    height: 32px;
+    border: 1px solid #E4E4E4;
+    border-radius: 16px;
+    font-size: 14px;
+    text-align: center;
+    float: left;
+    margin-right: 10px;
+}
+#select input~.p2{
+    float: left;
+    line-height: 32px;
+    margin-right: 20px;
+}
+/* 결과영역 */
+#result_area{
+    width: 880px;
+    position: relative;
+    top: 0px;
+    left: 400px;
+    padding: 0 40px;
+}
+#filter{
+    width: 600px;
+    float: left;
+}
+#filter>img{
+    display: block;
+    width: 24px;
+    float: left;
+    margin: 4px 12px 0 0;
+}
+#filter button{
+    margin-right: 10px;
+}
+#selected{
+    float: left;
+    width: 560px;
+    margin-bottom: 10px;
+}
+#filter~select{
+    float: right;
+    width: 180px;
+    height: 32px;
+    border: none;
+    background: white;
+    box-shadow: 1px 1px 8px 0px #0000001A;
+    border-radius: 5px;
+    padding-left: 10px;
+    color:#707070;
+}
+
+/* 상품영역 */
+
+#list{
+    clear: both;
+}
+.card{
+    width: 800px;
+    height: 300px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 1px 1px 8px 0px #0000001A;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: none;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+.card:hover{
+    transform: scale(1.01);
+}
+.photo{
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+.main_photo{
+    width: 300px;
+    height: 225px;
+    overflow: hidden;
+}
+.main_photo img{
+    height: 225px;
+}
+.sub_photo{
+    width: 300px;
+    height: 75px;
+}
+.sub_photo li{
+    float: left;
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+}
+.sub_photo img{
+    height: 75px;
+}
+.plus{
+    width: 75px;
+    height: 75px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    line-height: 75px;
+    color: white;
+    font-weight: 600;
+    margin-top: -80px;
+    position: relative;
+    z-index: 9;
+}
+.like{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    cursor: pointer;
+}
+.info{
+    width: 320px;
+    height: 300px;
+    float: left;
+    border-right: 1px solid #E4E4E4;
+    padding: 20px;
+    position: relative;
+}
+.tag{
+    font-size: 14px;
+    font-weight: 600;
+    color: #21CC90;
+    margin: 5px 0;
+}
+.info .text{
+    color: #707070;
+}
+.booked{
+    font-size: 14px;
+    font-weight: 600;
+    color: #FF6666;
+    position: absolute;
+    bottom: 80px;
+}
+.locate>*, .date>*{
+    float: left;
+    margin-right: 10px;
+    line-height: 1;
+    color: #707070;
+}
+.locate img{
+    width: 13px;
+    margin-left: 1px;
+}
+.locate{
+    position: absolute;
+    bottom: 50px;
+}
+.date{
+    clear: both;
+    position: absolute;
+    bottom: 20px;
+}
+.date img{
+    width: 15px;
+}
+.cost{
+    width: 180px;
+    height: 300px;
+    float: left;
+    padding: 20px 0 0 20px;
+}
+.cost .p2{
+    float: left;
+    margin: 0 15px 20px 0;
+}
+.cost .p2 span{
+    font-weight: 600;
+    color: #21CC90;
+    margin-left: 10px;
+}
+.label{
+    width: 80px;
+    height: 80px;
+    float: right;
+}
+.cost label{
+    display: block;
+    clear: both;
+    width: 80px;
+    height: 34px;
+    border-radius: 34px 0 0 34px;
+    text-align: center;
+    font-family: 'GmarketSansBold';
+    font-size: 12px;
+    color: white;
+    background-color: #FF6666;
+    line-height: 34px;
+    margin-bottom: 10px;
+}
+label.best{
+    background-color: #FFB610;
+}
+.price{     
+    font-size: 20px;
+    font-weight: 600;
+    color: #21CC90;
+    text-align: right;
+    margin-right: 20px;
+    position: absolute;
+    bottom: 90px;
+    right: 0;
+}
+.price span{
+    font-size: 16px;
+    color: #B3B3B3;
+    text-decoration: line-through;
+    font-weight: 400;
+}
+button.card_btn{
+    width: 160px;
+    height: 60px;
+    background: #21CC90;
+    border-radius: 60px 0 0 60px;
+    color: white;
+    font-size: 18px;
+    font-family: 'GmarketSansBold';
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    cursor: pointer;
+}
+
+/* 더보기 버튼 */
+#more{
+    display: block;
+    width: 200px;
+    height: 80px;
+    border-radius: 80px;
+    box-shadow: 1px 1px 8px 0px #0000001A;
+    margin: 40px auto;
+    cursor: pointer;
+    background-color:#21CC90;
+    padding: 0 53px;
+}
+#more p{
+    font-size: 22px;
+    line-height: 83px;
+    font-family: 'GmarketSansBold';
+    color: white;
+    float: left;
+}
+#more img{
+    float: left;
+    width: 20px;
+    margin: 30px 0px 30px 10px;
+}
+#more:hover{
+    transform: scale(1.02);
+}
+#end{
+    width: 220px;
+    height: 100px;
+    color: #21CC90;
+    margin: 40px auto;
+    display: none;
+    padding-top: 40px;
+}
+#end p{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'GmarketSansBold';
+}
+
+/* 로딩 */
+#loading{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 999;
+}
+#loading.on{
+    display: block;
+}
+#loading_text{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#loading_text p{
+    font-size: 26px;
+    color: black;
+    font-family: 'GmarketSansBold';
+}
+#loading.on #loading_text img{
+    margin-bottom: 10px;
+    transform: rotate(-10deg);
+    animation: loading 1.6s ease-in-out 1 normal
+}
+@keyframes loading{
+    from{
+        margin-left: 0;
+        transform: rotate(-10deg);
+    }
+    50%{
+        margin-left: 150px;
+        transform: rotate(180deg);
+    }
+    to{
+        margin-left: 0;
+        transform: rotate(-10deg);
+    }
+}

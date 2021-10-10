@@ -1,0 +1,69 @@
+#intro img {
+  height: 600px;
+  margin: 10% 0 0 15%;
+}
+
+#book ul {
+  width: 4080px;
+  -webkit-animation: bookani 12s infinite linear normal;
+          animation: bookani 12s infinite linear normal;
+  margin-left: -340px;
+}
+
+@-webkit-keyframes bookani {
+  from {
+    margin-left: -340px;
+  }
+  to {
+    margin-left: -2380px;
+  }
+}
+
+@keyframes bookani {
+  from {
+    margin-left: -340px;
+  }
+  to {
+    margin-left: -2380px;
+  }
+}
+
+#role > img {
+  width: 58.333%;
+  left: -40px;
+  position: relative;
+  z-index: 99;
+}
+
+#card ul {
+  width: 5800px;
+  -webkit-animation: bookani2 20s infinite linear normal;
+          animation: bookani2 20s infinite linear normal;
+  margin-left: -440px;
+}
+
+@-webkit-keyframes bookani2 {
+  from {
+    margin-left: -440px;
+  }
+  to {
+    margin-left: -3960px;
+  }
+}
+
+@keyframes bookani2 {
+  from {
+    margin-left: -440px;
+  }
+  to {
+    margin-left: -3960px;
+  }
+}
+
+#link img {
+  position: absolute;
+  width: 31.25%;
+  clear: both;
+  margin: 300px 150px;
+}
+/*# sourceMappingURL=whyredb.css.map */

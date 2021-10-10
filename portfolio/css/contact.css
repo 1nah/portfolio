@@ -1,0 +1,23 @@
+#contact p{
+    font-size: 1rem;
+    color: white;
+}
+
+#nav_btn:hover{
+    animation: btnani 0.1s infinite linear normal;
+}
+@keyframes btnani{
+    from{
+        transform: rotate(2deg);
+    }
+    50%{
+        transform: rotate(-2deg);
+    }
+    to{
+        transform: rotate(2deg);
+    }
+}
+
+.close img:hover{
+    animation: btnani 0.1s infinite linear normal;
+}

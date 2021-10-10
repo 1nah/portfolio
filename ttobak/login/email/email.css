@@ -1,0 +1,74 @@
+#login{
+    position: relative;
+    width: 1280px;
+    height: 640px;
+    margin: 0 auto;
+    padding-top: 150px;
+} 
+#email{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+} 
+#login input{
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+#login input::placeholder{
+    color: #b3b3b3;
+    font-weight: 400;
+}
+#login img{
+    width: 100px;
+    margin: 0 auto 40px;
+    display: block;
+}
+#login button{
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #21CC90;
+    position: relative;
+    margin-bottom: 10px;
+} 
+button p{
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+}
+#check>*{
+    float: left;
+    margin-right: 10px;
+    line-height: 15px;
+}
+#check p{
+    margin-right: 20px;
+}
+#check input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    opacity: 70%;
+}
+#login ul{
+    margin: 0 auto;
+    width: fit-content;
+}
+#login ul li{
+    float: left;
+    margin: 0 5px;
+}
+#login ul li a{
+    opacity: 0.8;
+}
+#login ul li a:hover{
+    opacity: 1;
+}
+button:hover{
+    transform: scale(1.01);
+}

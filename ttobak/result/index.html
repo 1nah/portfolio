@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>또박투어 | 검색결과</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../default.css">
+    <link rel="stylesheet" href="../subpage.css">
+    <link rel="stylesheet" href="result.css">
+    
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="result.js"></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- favicon -->
+    <link rel = "shotcut icon" href = "../images/favicon.ico">
+
+</head>
+<body>
+    <div id="container"> <!-- 100% 배경 영역 -->
+        <div id="wrapper"> 
+            <!-- header -->
+            <header>
+                <div id="top_nav">
+                    <ul>
+                        <li><a href="../login/index.html">로그아웃</a></li>
+                        <li><a href="#none">고객센터</a></li>
+                        <li><a href="#none">한국어 ▼</a></li>
+                    </ul>
+                </div>
+                <div id="logo">
+                    <a href="../index.html"><img src="../images/LOGO.png" alt="LOGO"></a>
+                </div>
+                <div id="navarea">
+                    <div id="nav">
+                        <ul>
+                            <li><a href="index.html">해외여행</a></li>
+                            <li><a href="index.html">국내여행</a></li>
+                            <li><a href="index.html">항공</a></li>
+                            <li><a href="index.html">숙박</a></li>
+                            <li><a href="../event/index.html">기획전</a></li> 
+                            <li><a href="../event/index.html">이벤트</a></li>
+                            <li><a href="#none">공지사항</a></li>
+                        </ul>
+                        <div>
+                            <input type="text">
+                            <a href="index.html"><img src="../images/look.png" alt="look"></a>
+                        </div>
+                    </div>
+                    <div id="myarea">
+                        <div id="my">
+                            <a href="../login/index.html"><img src="../images/profile.png" alt="profile"></a>
+                            <a href="../login/index.html"><p>나의여행</p></a>
+                        </div>
+                        <div id="cart">
+                            <a href="../login/index.html"><img src="../images/cart.png" alt="cart"></a>
+                            <a href="../login/index.html"><p>장바구니</p></a>
+                        </div>
+                        <div id="cart_num">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div id="result_bg">
+                <div id="result_top"></div>
+                <div id="result">
+                    <div id="search">
+                        <ul>
+                            <li>
+                                    <p class="p1">김포공항</p>
+                                    <p class="p2">에서</p>
+                            </li>
+                            <li>
+                                    <p class="p1">대한민국 제주도</p>
+                                    <p class="p2">로</p>
+                            </li>
+                            <li>
+                                    <p class="p1">2021년 12월 21일</p>
+                                    <p class="p2">부터</p>
+                            </li>
+                            <li>
+                                    <p class="p1">2021년 12월 30일</p>
+                                    <p class="p2">까지</p>
+                            </li>
+                            <li>
+                                    <p class="p1">3명</p>
+                                    <p class="p2">이</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="select">
+                        <ul>
+                            <li>
+                                <p id="find">떠날 수 있는 <span>486개</span>의<br>여행을 찾았어요!</p>
+                            </li>
+                            <li>
+                                <p class="p1">유형</p>
+                                <button class="on package">패키지</button>
+                                <button class="airline">항공권</button>
+                                <button class="stay">숙박</button>
+                                <br>
+                                <button class="alone">나홀로</button>
+                                <button class="on friend">친구와</button>
+                                <button class="lover">연인과</button>
+                                <button class="family">가족과</button>
+                            </li>
+                            <li class="input">
+                                <p class="p1">가격</p>
+                                <input type="text" placeholder="20만원">
+                                <p class="p2">부터</p>
+                                <input type="text" placeholder="40만원">
+                                <p class="p2">까지</p>
+                            </li>
+                            <li class="input">
+                                <p class="p1">여행기간</p>
+                                <input type="text" placeholder="5일">
+                                <p class="p2">부터</p>
+                                <input type="text" placeholder="7일">
+                                <p class="p2">까지</p>
+                            </li>
+                            <li>
+                                <p class="p1">숙박</p>
+                                <button class="hotel">호텔</button>
+                                <button class="resort">리조트</button>
+                                <button class="cottage">펜션</button>
+                                <button class="hostel">호스텔</button>
+                                <br>
+                                <button class="on poolvilla">풀빌라</button>
+                                <button class="guesthouse">게스트하우스</button>
+                                <button class="motel">모텔</button>
+                            </li>
+                            <li>
+                                <p class="p1">항공권</p>
+                                <button class="firstclass">퍼스트클래스</button>
+                                <button class="business">비즈니스</button>
+                                <button class="on economy">이코노미</button>
+                            </li>
+                            <li>
+                                <p class="p1">항공사</p>
+                                <button class="korea">대한항공</button>
+                                <button class="asiana">아시아나항공</button>
+                                <button class="jin">진에어</button>
+                                <br>
+                                <button class="tway">티웨이항공</button>
+                                <button class="seoul">에어서울</button>
+                                <button class="jeju">제주에어</button>
+                            </li>
+                            <li>
+                                <p class="p1">여행테마</p>
+                                <button class="on hocance">호캉스</button>
+                                <button class="gourmet">식도락</button>
+                                <button class="shopping">쇼핑</button>
+                                <button class="heritage">문화재</button>
+                                <br>
+                                <button class="leisure">레저</button>
+                                <button class="on snap">스냅촬영</button>
+                                <button class="golf">골프</button>
+                                <br>
+                                <button class="honeymoon">허니문</button>
+                                <button class="filial">효도여행</button>
+                            </li>
+                            <li>
+                                <p class="p1">상세조건</p>
+                                <button class="on free">완전자유여행</button>
+                                <button class="halffree">부분자유여행</button>
+                                <button class="noshopping">NO쇼핑</button>
+                                <br>
+                                <button class="guide">가이드포함</button>
+                                <button class="on noguide">NO가이드</button>
+                                <button class="nooption">NO옵션</button>
+                                <br>
+                                <button class="rentalcar">렌트카포함</button>
+                                <button class="noisolation">자가격리제외</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="result_area">
+                        <div id="filter">
+                            <img src="images/filter.png" alt="filter">
+                            <div id="selected">
+                                <button class="on package selected">
+                                    패키지 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on airline">
+                                    항공권 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on stay">
+                                    숙박 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on alone">
+                                    나홀로 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on friend selected">
+                                    친구와 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on lover">
+                                    연인과 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on family">
+                                    가족과 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on hotel">
+                                    호텔 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on resort">
+                                    리조트 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on cottage">
+                                    펜션 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on hostel">
+                                    호스텔 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on poolvilla selected">
+                                    풀빌라 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on guesthouse">
+                                    게스트하우스 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on motel">
+                                    모텔 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on firstclass">
+                                    퍼스트클래스 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on business">
+                                    비즈니스 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on economy selected">
+                                    이코노미 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on korea">
+                                    대한항공 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on asiana">
+                                    아시아나항공 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on jin">
+                                    진에어 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on tway">
+                                    티웨이항공 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on seoul">
+                                    에어서울 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on jeju">
+                                    제주에어 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on hocance selected">
+                                    호캉스 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on gourmet">
+                                    식도락 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on shopping">
+                                    쇼핑 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on heritage">
+                                    문화재 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on leisure">
+                                    레저/어트랙션 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on snap selected">
+                                    스냅촬영 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on golf">
+                                    골프 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on honeymoon">
+                                    허니문 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on filial">
+                                    효도여행 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on free selected">
+                                    완전자유여행 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on halffree">
+                                    부분자유여행 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on noshopping">
+                                    NO쇼핑 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on guide">
+                                    가이드포함 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on noguide selected">
+                                    NO가이드 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on nooption">
+                                    NO옵션 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on rentalcar selected">
+                                    렌트카포함 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button class="on noisolation">
+                                    자가격리제외 <img src="images/delete.png" alt="delete">
+                                </button>
+                                <button id="reset" class="on">
+                                    <img src="images/reset.png" alt="reset">
+                                </button>
+                            </div>
+                        </div>
+                        <select>
+                            <option>추천순으로 정렬</option>
+                            <option>높은가격순으로 정렬</option>
+                            <option>낮은가격순으로 정렬</option>
+                            <option>평점순으로 정렬</option>
+                            <option>구매순으로 정렬</option>
+                            <option>후기순으로 정렬</option>
+                        </select>
+                        <ul id="list">
+                            <li class="card">
+                                <div class="photo">
+                                    <div class="main_photo"><img src="images/r1-1.jpg" alt="main_photo"></div>
+                                    <ul class="sub_photo">
+                                        <li><img src="images/r1-2.jpg" alt="sub_photo"></li>
+                                        <li><img src="images/r1-3.jpg" alt="sub_photo"></li>
+                                        <li><img src="images/r1-4.jpg" alt="sub_photo"></li>
+                                        <li>
+                                            <img src="images/r1-5.jpg" alt="sub_photo">
+                                            <p class="plus">+17</p>
+                                        </li>
+                                    </ul>
+                                    <img src="images/like.png" alt="like" class="like">
+                                </div>
+                                <div class="info">
+                                    <p class="p1">제주 라마다플라자제주호텔 투어</p>
+                                    <p class="tag">#패키지 #스냅촬영 #호캉스</p>
+                                    <p class="p2 text">
+                                        제주 바다 앞 위치한 최근 리노베이션으로 새롭게 태어난 가성비 좋은 호텔입니다. 바닷가에서 스냅촬영으로 잊지못할 추억을 가져가세요!
+                                    </p>
+                                    <p class="booked">3시간 전에 예약된 상품입니다</p>
+                                    <div class="locate">
+                                        <img src="images/locate.png" alt="locate"> <p class="p2">제주도 제주시</p>
+                                    </div>
+                                    <div class="date">
+                                        <img src="images/date.png" alt="date"> <p class="p2">4박 5일</p>
+                                    </div>
+                                </div>
+                                <div class="cost">
+                                    <p class="p2">평점<span>9.3</span></p>
+                                    <p class="p2">후기<span>999+</span></p>
+                                    <div class="label">
+                                        <label class="best">BEST</label>
+                                        <label class="sale">40% off</label>
+                                    </div>
+                                    <p class="price"><span>558,000원</span><br>334,800원~</p>
+                                    <button class="card_btn">자세히보기</button>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="photo">
+                                    <div class="main_photo"><img src="images/r2-1.jpg" alt="main_photo"></div>
+                                    <ul class="sub_photo">
+                                        <li><img src="images/r2-2.jpg" alt="sub_photo"></li>
+                                        <li><img src="images/r2-3.jpg" alt="sub_photo"></li>
+                                        <li><img src="images/r2-4.jpg" alt="sub_photo"></li>
+                                        <li>
+                                            <img src="images/r2-5.jpg" alt="sub_photo">
+                                            <p class="plus">+5</p>
+                                        </li>
+                                    </ul>
+                                    <img src="images/like_p.png" alt="like" class="like">
+                                </div>
+                                <div class="info">
+                                    <p class="p1">협재해변 스냅촬영 패키지</p>
+                                    <p class="tag">#패키지 #스냅촬영 #우정여행</p>
+                                    <p class="p2 text">
+                                        제주의 보물 에메랄드 빛의 협재해변 스냅패키지입니다. 전문 포토그래퍼의 손에서 탄생하는 인생샷의 주인공이 되어보세요!
+                                    </p>
+                                    <p class="booked">2시간 전에 예약된 상품입니다</p>
+                                    <div class="locate">
+                                        <img src="images/locate.png" alt="locate"> <p class="p2">제주도 제주시</p>
+                                    </div>
+                                    <div class="date">
+                                        <img src="images/date.png" alt="date"> <p class="p2">6박 7일</p>
+                                    </div>
+                                </div>
+                                <div class="cost">
+                                    <p class="p2">평점<span>7.6</span></p>
+                                    <p class="p2">후기<span>75</span></p>
+                                    <div class="label">
+                                        <!-- <label class="best">BEST</label> -->
+                                        <label class="sale">50% off</label>
+                                    </div>
+                                    <p class="price"><span>984,000원</span><br>492,000원~</p>
+                                    <button class="card_btn">자세히보기</button>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="photo">
+                                    <div class="main_photo"><img src="images/r3-1.jpg" alt="main_photo"></div>
+                                    <ul class="sub_photo">
+                                        <li><img src="images/r3-2.jpg" alt="sub_photo"></li>
+                                        <li><img src="images/r3-3.jpg" alt="sub_photo"></li>
+                                        <li><img src="images/r3-4.jpg" alt="sub_photo"></li>
+                                        <li>
+                                            <img src="images/r3-5.jpg" alt="sub_photo">
+                                            <p class="plus">+12</p>
+                                        </li>
+                                    </ul>
+                                    <img src="images/like_p.png" alt="like" class="like">
+                                </div>
+                                <div class="info">
+                                    <p class="p1">숨겨진 제주 마을 힐링 여행</p>
+                                    <p class="tag">#패키지 #풀빌라 #오션뷰</p>
+                                    <p class="p2 text">
+                                        사람들 다 가는 관광지는 지겹지 않으신가요? 보면 볼수록 매력적인 제주 마을의 매력에 풍덩 빠져보세요~
+                                    </p>
+                                    <!-- <p class="booked">3시간 전에 예약된 상품입니다</p> -->
+                                    <div class="locate">
+                                        <img src="images/locate.png" alt="locate"> <p class="p2">제주도 서귀포시</p>
+                                    </div>
+                                    <div class="date">
+                                        <img src="images/date.png" alt="date"><p class="p2">6박 7일</p>
+                                    </div>
+                                </div>
+                                <div class="cost">
+                                    <p class="p2">평점<span>8.7</span></p>
+                                    <p class="p2">후기<span>845</span></p>
+                                    <div class="label">
+                                        <label class="best">BEST</label>
+                                        <!-- <label class="sale">40% off</label> -->
+                                    </div>
+                                    <p class="price"><span></span>628,000원~<br></p>
+                                    <button class="card_btn">자세히보기</button>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="photo">
+                                    <div class="main_photo"><img src="images/r4-1.jpg" alt="main_photo"></div>
+                                    <ul class="sub_photo">
+                                        <li><img src="images/r4-2.jpg" alt="sub_photo"></li>
+                                        <li><img src="images/r4-3.jpg" alt="sub_photo"></li>
+                                        <li><img src="images/r4-4.jpg" alt="sub_photo"></li>
+                                        <li>
+                                            <img src="images/r4-5.jpg" alt="sub_photo">
+                                            <p class="plus">+8</p>
+                                        </li>
+                                    </ul>
+                                    <img src="images/like.png" alt="like" class="like">
+                                </div>
+                                <div class="info">
+                                    <p class="p1">2030 취향저격 독채풀빌라</p>
+                                    <p class="tag">#패키지 #우정여행 #풀빌라</p>
+                                    <p class="p2 text">
+                                        동년배들 다 좋아한다는 럭셔리 독채 풀빌라 패키지입니다. 프라이빗하고 특별한 제주여행을 즐겨보세요. 
+                                    </p>
+                                    <!-- <p class="booked">3시간 전에 예약된 상품입니다</p> -->
+                                    <div class="locate">
+                                        <img src="images/locate.png" alt="locate"> <p class="p2">제주도 제주시</p>
+                                    </div>
+                                    <div class="date">
+                                        <img src="images/date.png" alt="date"> <p class="p2">5박 6일</p>
+                                    </div>
+                                </div>
+                                <div class="cost">
+                                    <p class="p2">평점<span>9.4</span></p>
+                                    <p class="p2">후기<span>999+</span></p>
+                                    <div class="label">
+                                        <label class="best">BEST</label>
+                                        <label class="sale">30% off</label>
+                                    </div>
+                                    <p class="price"><span>600,000원</span><br>420,000원~</p>
+                                    <button class="card_btn">자세히보기</button>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="photo">
+                                    <div class="main_photo"><img src="images/r5-1.jpg" alt="main_photo"></div>
+                                    <ul class="sub_photo">
+                                        <li><img src="images/r5-2.jpg" alt="sub_photo"></li>
+                                        <li><img src="images/r5-3.jpg" alt="sub_photo"></li>
+                                        <li><img src="images/r5-4.jpg" alt="sub_photo"></li>
+                                        <li>
+                                            <img src="images/r5-5.jpg" alt="sub_photo">
+                                            <p class="plus">+11</p>
+                                        </li>
+                                    </ul>
+                                    <img src="images/like.png" alt="like" class="like">
+                                </div>
+                                <div class="info">
+                                    <p class="p1">제주 유탑유블레스호텔 투어</p>
+                                    <p class="tag">#패키지 #호캉스 #오션뷰</p>
+                                    <p class="p2 text">
+                                        일본 료칸 느낌이 물씬 나는 편하고 아늑한 고급 호텔입니다. 제주에서만 볼 수 있는 아름다운 오션뷰를 눈에 담아가세요.
+                                    </p>
+                                    <p class="booked">2시간 전에 예약된 상품입니다</p>
+                                    <div class="locate">
+                                        <img src="images/locate.png" alt="locate"> <p class="p2">제주도 제주시</p>
+                                    </div>
+                                    <div class="date">
+                                        <img src="images/date.png" alt="date"> <p class="p2">4박 5일</p>
+                                    </div>
+                                </div>
+                                <div class="cost">
+                                    <p class="p2">평점<span>7.9</span></p>
+                                    <p class="p2">후기<span>32</span></p>
+                                    <div class="label">
+                                        <!-- <label class="best">BEST</label> -->
+                                        <!-- <label class="sale">40% off</label> -->
+                                    </div>
+                                    <p class="price">407,000원~</p>
+                                    <button class="card_btn">자세히보기</button>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="photo">
+                                    <div class="main_photo"><img src="images/r6-1.jpg" alt="main_photo"></div>
+                                    <ul class="sub_photo">
+                                        <li><img src="images/r6-2.jpg" alt="sub_photo"></li>
+                                        <li><img src="images/r6-3.jpg" alt="sub_photo"></li>
+                                        <li><img src="images/r6-4.jpg" alt="sub_photo"></li>
+                                        <li>
+                                            <img src="images/r6-5.jpg" alt="sub_photo">
+                                            <p class="plus">+15</p>
+                                        </li>
+                                    </ul>
+                                    <img src="images/like.png" alt="like" class="like">
+                                </div>
+                                <div class="info">
+                                    <p class="p1">메종 글래드 제주 부티크 호텔</p>
+                                    <p class="tag">#패키지 #스냅촬영 #자유여행</p>
+                                    <p class="p2 text">
+                                        제주도 조식 맛집으로 소문난 럭셔리 부티크 호텔입니다. 각종 제주 특산물로 만들어지는 푸짐한 한상을 맛보세요!
+                                    </p>
+                                    <!-- <p class="booked">3시간 전에 예약된 상품입니다</p> -->
+                                    <div class="locate">
+                                        <img src="images/locate.png" alt="locate"> <p class="p2">제주도 제주시</p>
+                                    </div>
+                                    <div class="date">
+                                        <img src="images/date.png" alt="date"> <p class="p2">4박 5일</p>
+                                    </div>
+                                </div>
+                                <div class="cost">
+                                    <p class="p2">평점<span>7.5</span></p>
+                                    <p class="p2">후기<span>331</span></p>
+                                    <div class="label">
+                                        <!-- <label class="best">BEST</label> -->
+                                        <label class="sale">40% off</label>
+                                    </div>
+                                    <p class="price"><span>856,000원</span><br>513,600원~</p>
+                                    <button class="card_btn">자세히보기</button>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="photo">
+                                    <div class="main_photo"><img src="images/r7-1.jpg" alt="main_photo"></div>
+                                    <ul class="sub_photo">
+                                        <li><img src="images/r7-2.jpg" alt="sub_photo"></li>
+                                        <li><img src="images/r7-3.jpg" alt="sub_photo"></li>
+                                        <li><img src="images/r7-4.jpg" alt="sub_photo"></li>
+                                        <li>
+                                            <img src="images/r7-5.jpg" alt="sub_photo">
+                                            <p class="plus">+18</p>
+                                        </li>
+                                    </ul>
+                                    <img src="images/like.png" alt="like" class="like">
+                                </div>
+                                <div class="info">
+                                    <p class="p1">인스타그램 감성 버스 투어</p>
+                                    <p class="tag">#패키지 #스냅촬영 #우정여행</p>
+                                    <p class="p2 text">
+                                        인스타그램에 올리면 좋아요 터지는 감성 스팟만 엄선해놓은 버스 투어입니다. 전문 사진 작가가 동행하여 인생샷 보장!
+                                    </p>
+                                    <p class="booked">1시간 전에 예약된 상품입니다</p>
+                                    <div class="locate">
+                                        <img src="images/locate.png" alt="locate"> <p class="p2">제주도 서귀포시</p>
+                                    </div>
+                                    <div class="date">
+                                        <img src="images/date.png" alt="date"> <p class="p2">6박 7일</p>
+                                    </div>
+                                </div>
+                                <div class="cost">
+                                    <p class="p2">평점<span>9.2</span></p>
+                                    <p class="p2">후기<span>648</span></p>
+                                    <div class="label">
+                                        <label class="best">BEST</label>
+                                        <!-- <label class="sale">40% off</label> -->
+                                    </div>
+                                    <p class="price">599,000원~</p>
+                                    <button class="card_btn">자세히보기</button>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="photo">
+                                    <div class="main_photo"><img src="images/r8-1.jpg" alt="main_photo"></div>
+                                    <ul class="sub_photo">
+                                        <li><img src="images/r8-2.jpg" alt="sub_photo"></li>
+                                        <li><img src="images/r8-3.jpg" alt="sub_photo"></li>
+                                        <li><img src="images/r8-4.jpg" alt="sub_photo"></li>
+                                        <li>
+                                            <img src="images/r8-5.jpg" alt="sub_photo">
+                                            <p class="plus">+6</p>
+                                        </li>
+                                    </ul>
+                                    <img src="images/like.png" alt="like" class="like">
+                                </div>
+                                <div class="info">
+                                    <p class="p1">제주 히든클리프호텔 중형렌트카</p>
+                                    <p class="tag">#패키지 #호캉스 #자유여행</p>
+                                    <p class="p2 text">
+                                        독보적인 수영장 뷰를 자랑하는 숲 속 럭셔리 호텔입니다. 렌트카로 편하게 누비는 자유여행은 덤!
+                                    </p>
+                                    <!-- <p class="booked">3시간 전에 예약된 상품입니다</p> -->
+                                    <div class="locate">
+                                        <img src="images/locate.png" alt="locate"> <p class="p2">제주도 서귀포시</p>
+                                    </div>
+                                    <div class="date">
+                                        <img src="images/date.png" alt="date"> <p class="p2">5박 6일</p>
+                                    </div>
+                                </div>
+                                <div class="cost">
+                                    <p class="p2">평점<span>7.4</span></p>
+                                    <p class="p2">후기<span>233</span></p>
+                                    <div class="label">
+                                        <!-- <label class="best">BEST</label> -->
+                                        <!-- <label class="sale">40% off</label> -->
+                                    </div>
+                                    <p class="price">726,000원~</p>
+                                    <button class="card_btn">자세히보기</button>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="photo">
+                                    <div class="main_photo"><img src="images/r9-1.jpg" alt="main_photo"></div>
+                                    <ul class="sub_photo">
+                                        <li><img src="images/r9-2.jpg" alt="sub_photo"></li>
+                                        <li><img src="images/r9-3.jpg" alt="sub_photo"></li>
+                                        <li><img src="images/r9-4.jpg" alt="sub_photo"></li>
+                                        <li>
+                                            <img src="images/r9-5.jpg" alt="sub_photo">
+                                            <p class="plus">+13</p>
+                                        </li>
+                                    </ul>
+                                    <img src="images/like.png" alt="like" class="like">
+                                </div>
+                                <div class="info">
+                                    <p class="p1">그랜드 조선 제주호텔 호캉스</p>
+                                    <p class="tag">#패키지 #스냅촬영 #자유여행</p>
+                                    <p class="p2 text">
+                                        입구부터 탄성을 자아내는 고급 호텔에서의 호캉스 어떠세요? 밤에는 180도 바뀌는 수영장의 또다른 매력을 느낄 수 있습니다.
+                                    </p>
+                                    <!-- <p class="booked">3시간 전에 예약된 상품입니다</p> -->
+                                    <div class="locate">
+                                        <img src="images/locate.png" alt="locate"> <p class="p2">제주도 서귀포시</p>
+                                    </div>
+                                    <div class="date">
+                                        <img src="images/date.png" alt="date"> <p class="p2">5박 6일</p>
+                                    </div>
+                                </div>
+                                <div class="cost">
+                                    <p class="p2">평점<span>7.6</span></p>
+                                    <p class="p2">후기<span>419</span></p>
+                                    <div class="label">
+                                        <!-- <label class="best">BEST</label> -->
+                                        <label class="sale">10% off</label>
+                                    </div>
+                                    <p class="price"><span>632,000원</span><br>568,800원~</p>
+                                    <button class="card_btn">자세히보기</button>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="photo">
+                                    <div class="main_photo"><img src="images/r10-1.jpg" alt="main_photo"></div>
+                                    <ul class="sub_photo">
+                                        <li><img src="images/r10-2.jpg" alt="sub_photo"></li>
+                                        <li><img src="images/r10-3.jpg" alt="sub_photo"></li>
+                                        <li><img src="images/r10-4.jpg" alt="sub_photo"></li>
+                                        <li>
+                                            <img src="images/r10-5.jpg" alt="sub_photo">
+                                            <p class="plus">+14</p>
+                                        </li>
+                                    </ul>
+                                    <img src="images/like.png" alt="like" class="like">
+                                </div>
+                                <div class="info">
+                                    <p class="p1">우도의 여름밤 잊지 못할 빛의 벙커</p>
+                                    <p class="tag">#패키지 #풀빌라 #오션뷰</p>
+                                    <p class="p2 text">
+                                        제주에서만 볼 수 있는 두가지의 아름다움을 선사합니다. 찬란한 광경의 우도와 반 고흐 대규모 전시 빛의 벙커에 초대합니다.
+                                    </p>
+                                    <p class="booked">4시간 전에 예약된 상품입니다</p>
+                                    <div class="locate">
+                                        <img src="images/locate.png" alt="locate"> <p class="p2">제주도 제주시</p>
+                                    </div>
+                                    <div class="date">
+                                        <img src="images/date.png" alt="date"> <p class="p2">4박 5일</p>
+                                    </div>
+                                </div>
+                                <div class="cost">
+                                    <p class="p2">평점<span>9.6</span></p>
+                                    <p class="p2">후기<span>921</span></p>
+                                    <div class="label">
+                                        <label class="best">BEST</label>
+                                        <label class="sale">30% off</label>
+                                    </div>
+                                    <p class="price"><span>457,000원</span><br>319,900원~</p>
+                                    <button class="card_btn">자세히보기</button>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="photo">
+                                    <div class="main_photo"><img src="images/r11-1.jpg" alt="main_photo"></div>
+                                    <ul class="sub_photo">
+                                        <li><img src="images/r11-2.jpg" alt="sub_photo"></li>
+                                        <li><img src="images/r11-3.jpg" alt="sub_photo"></li>
+                                        <li><img src="images/r11-4.jpg" alt="sub_photo"></li>
+                                        <li>
+                                            <img src="images/r11-5.jpg" alt="sub_photo">
+                                            <p class="plus">+10</p>
+                                        </li>
+                                    </ul>
+                                    <img src="images/like.png" alt="like" class="like">
+                                </div>
+                                <div class="info">
+                                    <p class="p1">제주 신라호텔 럭셔리 투어</p>
+                                    <p class="tag">#패키지 #호캉스 #수영장</p>
+                                    <p class="p2 text">
+                                        믿고가는 신라호텔에서 펼쳐지는 럭셔리한 일주일을 즐겨보세요!
+                                    </p>
+                                    <!-- <p class="booked">3시간 전에 예약된 상품입니다</p> -->
+                                    <div class="locate">
+                                        <img src="images/locate.png" alt="locate"> <p class="p2">제주도 서귀포시</p>
+                                    </div>
+                                    <div class="date">
+                                        <img src="images/date.png" alt="date"> <p class="p2">6박 7일</p>
+                                    </div>
+                                </div>
+                                <div class="cost">
+                                    <p class="p2">평점<span>6.8</span></p>
+                                    <p class="p2">후기<span>25</span></p>
+                                    <div class="label">
+                                        <!-- <label class="best">BEST</label> -->
+                                        <label class="sale">50% off</label>
+                                    </div>
+                                    <p class="price"><span>127,8000원</span><br>639,000원~</p>
+                                    <button class="card_btn">자세히보기</button>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="photo">
+                                    <div class="main_photo"><img src="images/r12-1.jpg" alt="main_photo"></div>
+                                    <ul class="sub_photo">
+                                        <li><img src="images/r12-2.jpg" alt="sub_photo"></li>
+                                        <li><img src="images/r12-3.jpg" alt="sub_photo"></li>
+                                        <li><img src="images/r12-4.jpg" alt="sub_photo"></li>
+                                        <li>
+                                            <img src="images/r12-5.jpg" alt="sub_photo">
+                                            <p class="plus">+3</p>
+                                        </li>
+                                    </ul>
+                                    <img src="images/like.png" alt="like" class="like">
+                                </div>
+                                <div class="info">
+                                    <p class="p1">우도관광 실속여행 패키지</p>
+                                    <p class="tag">#패키지 #호캉스 #오션뷰</p>
+                                    <p class="p2 text">
+                                        안 다녀오면 손해인 명소만 골라 담았다! 호텔에서는 탁 트인 오션뷰를, 우도에서는 생생한 자연을 함께 누리세요!
+                                    </p>
+                                    <p class="booked">3시간 전에 예약된 상품입니다</p>
+                                    <div class="locate">
+                                        <img src="images/locate.png" alt="locate"> <p class="p2">제주도 제주시</p>
+                                    </div>
+                                    <div class="date">
+                                        <img src="images/date.png" alt="date"> <p class="p2">4박 5일</p>
+                                    </div>
+                                </div>
+                                <div class="cost">
+                                    <p class="p2">평점<span>8.9</span></p>
+                                    <p class="p2">후기<span>354</span></p>
+                                    <div class="label">
+                                        <label class="best">BEST</label>
+                                        <!-- <label class="sale">40% off</label> -->
+                                    </div>
+                                    <p class="price">367,000원~</p>
+                                    <button class="card_btn">자세히보기</button>
+                                </div>
+                            </li>
+                        </ul>
+                        <div id="more">
+                            <p>더보기</p>
+                            <img src="images/more.png" alt="more">
+                        </div>
+                        <div id="end">
+                            <p>마지막 상품입니다 ;_;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
+            <footer>
+                <div id="footer">
+                    <div id="charimg2">
+                        <img src="../images/3.png" alt="3">
+                    </div>
+                    <div id="footlogo">
+                        <img src="../images/typelogo3.png" alt="typelogo3">
+                    </div>
+
+                    <div id="foot1">
+                        또박(주) 대표이사 김은별<br>
+                        경기도 수원시 장안구 정조로 940-1<br>
+                        (영화동, 연세IT미래교육원 빌딩) <br>
+                        Tel : 031-256-2662<br>
+                        Fax : 031-256-2663<br>
+                    </div>
+
+                    <div id="foot2">
+                        사업자번호 : 479-87-00056 <br>
+                        개인정보보호책임자 : 김한나 tladhgks@naver.com <br>
+                        Copyright © Ttoback 2020-2021 All Rights Reserved.
+                    </div>
+
+                    <div id="foot3">
+                        상담문의 <br>
+                        <div id="callnum">1544-1234</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div id="footer_bg"></div>
+        <div id="loading">
+            <div id="loading_text">
+                <img src="images/loading.png" alt="loading">
+                <p>새로운 필터 적용중</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

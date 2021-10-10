@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+$main_color: #141414;
+$point_color: #6CFF84;
+
+#intro img{
+    height: 600px;
+    margin: 10% 0 0 15%;
+}
+#book ul{
+    width: 4080px;
+    animation: bookani 12s infinite linear normal;
+    margin-left: -340px;
+}
+@keyframes bookani{
+    from{
+        margin-left: -340px;
+    }
+    to{
+        margin-left: -2380px;
+    }
+}
+#role>img{
+    width: 58.333%;
+    left: -40px;
+    position: relative;
+    z-index: 99;
+}
+#card ul{
+    width: 5800px;
+    animation: bookani2 20s infinite linear normal;
+    margin-left: -440px;
+}
+@keyframes bookani2{
+    from{
+        margin-left: -440px;
+    }
+    to{
+        margin-left: -3960px;
+    }
+}
+#link img{
+    position: absolute;
+    width: 31.25%;
+    clear: both;
+    margin: 300px 150px;
+
+}

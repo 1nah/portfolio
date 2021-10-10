@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <title>monami mall</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="monami.js"></script>
+    <link rel="stylesheet" href="monami.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
+    <link rel = "shotcut icon" href = "images/monami.ico">
+    <script src="https://kit.fontawesome.com/9448297042.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="header_top">
+                <div id="search">
+                    <img src="images/search.png" alt="">
+                    <div id="search_area">
+                        <input type="text" placeholder="모나미 모나르떼 어린이 미술대회">
+                    </div>
+                </div>
+                <div id="logo">
+                    <a href="#none"><img src="images/logo4.png" alt=""></a>
+                </div>
+                <div id="header_icon">
+                    <div>
+                        <a href="#none">
+                            <img src="images/bell.png" alt="">
+                            <div class="alarm">3</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#none">
+                            <img src="images/cart.png" alt="">
+                            <div class="alarm a2">1</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li class="on"><a href="#none">모나미</a></li>
+                    <li><a href="#none">문구</a></li>
+                    <li><a href="#none">리빙&라이프</a></li>
+                    <li><a href="#none">펫</a></li>
+                    <li><a href="#none">오피스</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="menu">
+                <div id="menu_top">
+                    <img src="images/logo4.png" alt="">
+                    <button id="login">로그인</button>
+                    <button id="join">회원가입</button>
+                    <img src="images/close.png" alt="" id="close">
+                </div>
+                <nav>
+                    <ul>
+                        <li>문구<span>Stationery</span><img src="images/down1.png" alt="">
+                            <ul class="sub">
+                                <li><a href="#none">전체보기</a></li>
+                                <li><a href="#none">프리미엄 펜</a></li>
+                                <li><a href="#none">펜 / 펜슬</a></li>
+                                <li><a href="#none">마카 / 컬러링</a></li>
+                                <li><a href="#none">디자인문구</a></li>
+                                <li><a href="#none">미술용품</a></li>
+                            </ul>
+                        </li>
+                        <li>리빙&라이프<span>Living&Life</span><img src="images/down1.png" alt="">
+                            <ul class="sub">
+                                <li><a href="#none">전체보기</a></li>
+                                <li><a href="#none">가구 / 인테리어</a></li>
+                                <li><a href="#none">생활 / 건강</a></li>
+                                <li><a href="#none">주방</a></li>
+                                <li><a href="#none">수납</a></li>
+                                <li><a href="#none">패션</a></li>
+                            </ul>
+                        </li>
+                        <li>펫<span>Pet</span><img src="images/down1.png" alt="">
+                            <ul class="sub">
+                                <li><a href="#none">전체보기</a></li>
+                                <li><a href="#none">사료</a></li>
+                                <li><a href="#none">간식</a></li>
+                                <li><a href="#none">장난감</a></li>
+                                <li><a href="#none">용품</a></li>
+                            </ul>
+                        </li>
+                        <li>오피스<span>Office</span><img src="images/down1.png" alt="">
+                            <ul class="sub">
+                                <li><a href="#none">전체보기</a></li>
+                                <li><a href="#none">오피스 데스크</a></li>
+                                <li><a href="#none">서류 정리함</a></li>
+                                <li><a href="#none">오피스 의자</a></li>
+                                <li><a href="#none">데스크 소품</a></li>
+                                <li><a href="#none">디지털</a></li>
+                            </ul>
+                        </li>
+                        <li>스토리픽<span>Story Pick</span><img src="images/down1.png" alt="">
+                            <ul class="sub">
+                                <li><a href="#none">전체보기</a></li>
+                                <li><a href="#none">모나미문구</a></li>
+                                <li><a href="#none">모나미펫</a></li>
+                                <li><a href="#none">리빙&라이프</a></li>
+                            </ul>
+                        </li>
+                        <li>이벤트<span>Event</span><img src="images/down1.png" alt="">
+                            <ul class="sub">
+                                <li><a href="#none">이벤트</li>
+                                <li><a href="#none">기획전</li>
+                                <li><a href="#none">아울렛</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="service">
+                    <div>
+                        <img src="images/faq.png" alt="">
+                        <p>FAQ</p>
+                    </div>
+                    <div>
+                        <img src="images/cs.png" alt="">
+                        <p>고객센터</p>
+                    </div>
+                </div>
+        </div>
+        <div id="bar">
+            <ul>
+                <li><a href="#none"><img src="images/menu.png" alt="" id="menu_btn"></a></li>
+                <li><a href="#none"><img src="images/home.png" alt=""></a></li>
+                <li><a href="#none"><img src="images/heart.png" alt=""></a></li>
+                <li><a href="#none"><img src="images/my.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div id="top">
+            <a href="#"><img src="images/top.png" alt=""></a>
+        </div>
+        <div id="slide">
+            <ul>
+                <li>
+                    <a href="#none">
+                        <img src="images/ss1.png" alt="" class="back">
+                        <img src="images/ss1_1.png" alt="" class="cap">
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <img src="images/ss2.png" alt="" class="back">
+                        <img src="images/ss2_1.png" alt="" class="cap">
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <img src="images/ss3.png" alt="" class="back">
+                        <img src="images/ss3_1.png" alt="" class="cap">
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <img src="images/ss4.png" alt="" class="back">
+                        <img src="images/ss4_1.png" alt="" class="cap">
+                    </a>
+                </li>
+                <li>
+                    <a href="#none">
+                        <img src="images/ss1.png" alt="" class="back">
+                        <img src="images/ss1_1.png" alt="" class="cap">
+                    </a>
+                </li>
+            </ul>
+            <div id="play">
+                <span>1</span> / 4
+                <img id="play_btn" src="images/stop.png" alt="">
+            </div>
+        </div>
+        <div id="speacial">
+            <h1>SPECIAL PRODUCT</h1>
+            <div><img src="images/left.png" alt="" class="s_btn left"></div>
+            <ul>
+                <li class="on"> 
+                    <a href="#none">
+                        <img src="images/s1.png" alt="">
+                    </a>
+                </li>
+                <li> 
+                    <a href="#none">
+                        <img src="images/s2.png" alt="">
+                    </a>
+                </li>
+                <li> 
+                    <a href="#none">
+                        <img src="images/s3.png" alt="">
+                    </a>
+                </li>
+                <li> 
+                    <a href="#none">
+                        <img src="images/s4.png" alt="">
+                    </a>
+                </li>
+                <li> 
+                    <a href="#none">
+                        <img src="images/s5.png" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div id="title">
+                <p class="on">에프엑스 일오삼 탑골셋-트</p>
+                <p>은쟁반 레드</p>
+                <p>이발소 블루</p>
+                <p>자개장 블랙</p>
+                <p>떡튀순 블랙</p>
+            </div>
+            <div><img src="images/right.png" alt="" class="s_btn right"></div>
+        </div>
+        <div id="new">
+            <h1>NEW ITEM</h1>
+            <div id="new_items">
+                <div>
+                    <div class="deco"></div>
+                    <div class="deco"></div>
+                    <div class="deco"></div>
+                </div>
+                <div class="new_item">
+                    <div class="new_pic">
+                        <img src="images/n1.png" alt="">
+                    </div>
+                    <div class="new_info">
+                        <h2>[한정판] 153 ID 8.15</h2>
+                        <p class="price">25,000원</p>
+                    </div>
+                </div>
+                <div class="new_item">
+                    <div class="new_pic">
+                        <img src="images/n2.png" alt="">
+                    </div>
+                    <div class="new_info">
+                        <h2>모나미 아크릴&구아슈...</h2>
+                        <p class="price"><span>5,000원</span>40% 3,000원</p>
+                    </div>
+                </div>
+                <div class="new_item">
+                    <div class="new_pic">
+                        <img src="images/n3.png" alt="">
+                    </div>
+                    <div class="new_info">
+                        <h2>설찌 색연필 12색</h2>
+                        <p class="price">10,000원</p>
+                    </div>
+                </div>
+                <div class="new_item">
+                    <div class="new_pic">
+                        <img src="images/n4.png" alt="">
+                    </div>
+                    <div class="new_info">
+                        <h2>FX ZETA 한국을 담다</h2>
+                        <p class="price">6,000원</p>
+                    </div>
+                </div>
+                <div class="new_item">
+                    <div class="new_pic">
+                        <img src="images/n5.png" alt="">
+                    </div>
+                    <div class="new_info">
+                        <h2>BFMA 메모패드 L - 린</h2>
+                        <p class="price"><span>4,000원</span>3,200원</p>
+                    </div>
+                </div>
+                <div class="new_item">
+                    <div class="new_pic">
+                        <img src="images/n6.png" alt="">
+                    </div>
+                    <div class="new_info">
+                        <h2>마켓비 핸드메이드 숄더백</h2>
+                        <p class="price">29,900원</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="banner">
+            <a href="#none"><img src="images/banner.png" alt=""></a>
+        </div>
+        <div id="best">
+            <h1>BEST ITEM</h1>
+            <div id="best_items">
+                <div class="best_item">
+                    <div class="best_pic">
+                        <div class="lank">1</div>
+                        <img src="images/b1.png" alt="">
+                    </div>
+                    <div class="best_info">
+                        <h2>프러스펜 3000 피그먼트</h2>
+                        <p class="price">700원</p>
+                    </div>
+                </div>
+                <div class="best_item">
+                    <div class="best_pic">
+                        <div class="lank">2</div>
+                        <img src="images/b2.png" alt="">
+                    </div>
+                    <div class="best_info">
+                        <h2>153 러브(LOVE)</h2>
+                        <p class="price">20,000원</p>
+                    </div>
+                </div>
+                <div class="best_item">
+                    <div class="best_pic">
+                        <div class="lank">3</div>
+                        <img src="images/b3.png" alt="">
+                    </div>
+                    <div class="best_info">
+                        <h2>윤동주 시인 문학잉크 4종</h2>
+                        <p class="price">20,000원</p>
+                    </div>
+                </div>
+                <div class="best_item">
+                    <div class="best_pic">
+                        <div class="lank">4</div>
+                        <img src="images/b4.png" alt="">
+                    </div>
+                    <div class="best_info">
+                        <h2>VIC 고체물감 24색 브러쉬</h2>
+                        <p class="price"><span>16,000원</span>10% 14,400원</p>
+                    </div>
+                </div>
+                <div class="best_item">
+                    <div class="best_pic">
+                        <div class="lank">5</div>
+                        <img src="images/b5.png" alt="">
+                    </div>
+                    <div class="best_info">
+                        <h2>위너 60se 2단 향균독서대</h2>
+                        <p class="price"><span>34,200원</span>20% 27,360원</p>
+                    </div>
+                </div>
+                <div class="best_item">
+                    <div class="best_pic">
+                        <div class="lank">6</div>
+                        <img src="images/b6_1.png" alt="">
+                    </div>
+                    <div class="best_info">
+                        <h2>[페이보릿띵즈]타포린백</h2>
+                        <p class="price">4,800원</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="story">
+            <h1>STORY PICK</h1>
+            <div id="mesh">
+                <div id="pick1">
+                    <a href="#none">
+                        <div class="inner">
+                            <img src="images/p1.png" alt="">
+                        </div>
+                        <div class="story_info">
+                            <h3>아이들과 함께 만드는 티셔츠</h3>
+                            <p>이세상 하나뿐인 오직 아이들을 위한 작품</p>
+                        </div>
+                    </a>
+                </div>
+                <div id="pick2">
+                    <a href="#none">
+                        <div class="inner">
+                            <img src="images/p2.png" alt="">
+                        </div>
+                        <div class="story_info">
+                            <h3>'기록덕후' 김신지<br>작가의 MIX활용기</h3>
+                            <p>요일별로, 용도별로, 내 맘대로</p>
+                        </div>
+                    </a>
+                </div>
+                <div id="pick3">
+                    <a href="#none">
+                        <div class="inner">
+                            <img src="images/p3.png" alt="">
+                        </div>
+                        <div class="story_info">
+                            <h3>대한민국을 품은 볼펜</h3>
+                            <p>일상에서 새기는 애국</p>
+                        </div>
+                        </a>
+                </div>
+                <div id="pick4">
+                    <a href="#none">
+                        <div class="inner">
+                            <img src="images/p4.png" alt="">
+                        </div>
+                        <div class="story_info">
+                            <h3>일러스트레이터 조안빈의 그림일기</h3>
+                            <p>간단한 도구로 풍부한 느낌을 내고 싶을 때</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <ul class="foot_nav">
+                <li><a href="#none">로그인</a></li>
+                <li><a href="#none">공지사항</a></li>
+                <li><a href="#none">제휴문의</a></li>
+                <li><a href="#none">입점안내</a></li>
+                <li><a href="#none">대량구매</a></li>
+            </ul>
+            <div id="bg">
+                <img src="images/logo_w.png" alt="">
+                <p>(주)모나미 사업자 정보 <span>∨</span></p>
+                <ul class="foot_nav">
+                    <li><a href="#none">회사소개</a></li>
+                    <li><a href="#none">이용약관</a></li>
+                    <li><a href="#none">개인정보처리방침</a></li>
+                    <li><a href="#none">인재채용</a></li>
+                    <li><a href="#none">고객센터</a></li>
+                </ul>
+                <div id="call">
+                    <div>
+                        <p id="number">1544-2884</p>
+                        <button>1:1문의</button>
+                        <button>카톡상담</button>
+                    </div>
+                    <p id="time">상담시간 8:30 - 17:30  |  점심시간 12:00 - 13:00  |  주말 및 공휴일 휴무</p>
+                </div>
+                <p>본 사이트의 콘텐츠는 저작권법의 보호를 받는 바 무단 전재, 복사, 배포 등을 금합니다.
+                    <br>Copyright© Monami All right Reserved.
+                </p>
+            </div>
+        </footer>
+        <div id="popup">
+            <img src="images/popup.png" alt="" id="pop_img">
+            <img src="images/popup_close.png" alt="" id="pop_close">
+        </div>
+    </div>
+</body>
+</html>

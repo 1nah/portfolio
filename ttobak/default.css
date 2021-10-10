@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR';
+}
+
+@font-face {    
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {   
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {    
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+ul, ol, dl{
+    list-style: none;
+}
+img, video{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #505050;
+}
+table{
+    border-collapse: collapse;
+}
+input, select{
+    vertical-align: middle;
+}
+body {
+    line-height: 1.5;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #505050;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-x : hidden;
+    user-select: none;
+}
+body, html{
+    scroll-behavior: smooth;
+}
+label{
+    cursor: pointer;
+}
+i, em, address {
+    font-style: normal;
+}
+
+/* header */
+
+#searcharea img{
+    width: 150px;
+}
+#searcharea{
+    position: relative;
+}
+#top{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #21cc90;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    line-height: 50px;
+    text-align: center;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+#top:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+#top a{
+    color: white;
+    font-weight: 500;
+}
+#logo{
+    width: 180px;
+    position: relative;
+    left: 45px;
+}
+#top_nav{
+    position: relative;
+    top: 10px;
+    left: 1080px;
+}
+#top_nav a{
+    font-size: 12px;
+    color: #707070;
+}
+#top_nav a:hover{
+    color: #1a1a1a;
+    cursor: pointer;
+}
+#top_nav li{
+    float: left;
+    padding: 10px;
+}
+#navarea{
+    position: relative;
+}
+#nav{
+    position: absolute;
+    top:20px;
+    left: 40px;
+    padding-inline-start: 0;
+    width: 1080px;
+}
+#nav a{
+    font-size: 20px;
+    color: #707070;
+    transition: 0.1s;
+}
+#nav a:hover{
+    color: #21cc90;
+    cursor: pointer;
+}
+#nav ul{
+    position: relative;
+}
+#nav li{
+    float: left;
+    padding-right: 45px;
+}
+#nav input{
+    width: 280px;
+    height: 35px;
+    border: 1px solid #b3b3b3;
+    border-radius: 20px;
+    padding-left: 18px;
+    position: relative;
+    margin-left: 50px;
+}
+#nav img{
+    position: absolute;
+    width: 14px;
+    opacity: 40%;
+    top: 10px;
+    right: 45px;
+}
+#nav img:hover{
+    opacity: 70%;
+    cursor: pointer;
+}
+#myarea{
+    width: 150px;
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+#myarea a{
+   color: #707070;
+}
+#myarea img{
+    width: 40px;
+    opacity: 50%;
+    transition: 0.1s;
+}
+#myarea img:hover{
+    opacity: 70%;
+    cursor: pointer;
+}
+#my, #cart{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    margin: 10px;
+}
+#cart_num{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 64, 0.692);
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* footer */
+
+#footer{
+    width: 100%;
+    height: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 65px;
+    position: relative;
+}
+
+#charimg2{
+    position: relative;
+    margin-top: -130px;
+    float: right;
+    margin-right: -50px;
+}
+
+#footlogo{
+    width: 134px;
+    float: left;
+    margin-right: 93px;
+}
+
+#foot1{
+    float: left;
+    width: 195px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #ffffff;
+    margin-right: 93px;
+}
+
+#foot2{
+    float: left;
+    width: 300px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+#foot3{
+    float: right;
+    width: 200px;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+#callnum{
+    font-size: 36px;
+}

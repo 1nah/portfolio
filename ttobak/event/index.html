@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>또박투어 | 이벤트</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../default.css">
+    <link rel="stylesheet" href="../subpage.css">
+    <link rel="stylesheet" href="event.css">
+    
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="event.js"></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- favicon -->
+    <link rel = "shotcut icon" href = "../images/favicon.ico">
+
+</head>
+<body>
+    <div id="container"> <!-- 100% 배경 영역 -->
+
+        <div id="wrapper"> <!-- 1280px 배경 영역 -->
+
+            <!-- header -->
+            <header>
+                <div id="top_nav">
+                    <ul>
+                        <li><a href="../login/index.html">로그아웃</a></li>
+                        <li><a href="#none">고객센터</a></li>
+                        <li><a href="#none">한국어 ▼</a></li>
+                    </ul>
+                </div>
+                <div id="logo">
+                    <a href="../index.html"><img src="../images/LOGO.png" alt="LOGO"></a>
+                </div>
+                <div id="navarea">
+                    <div id="nav">
+                        <ul>
+                            <li><a href="../result/index.html">해외여행</a></li>
+                            <li><a href="../result/index.html">국내여행</a></li>
+                            <li><a href="../result/index.html">항공</a></li>
+                            <li><a href="../result/index.html">숙박</a></li>
+                            <li><a href="../event/index.html">기획전</a></li> 
+                            <li><a href="../event/index.html">이벤트</a></li>
+                            <li><a href="#none">공지사항</a></li>
+                        </ul>
+                        <div>
+                            <input type="text">
+                            <a href="../result/index.html"><img src="../images/look.png" alt="look"></a>
+                        </div>
+                    </div>
+                    <div id="myarea">
+                        <div id="my">
+                            <a href="../login/index.html"><img src="../images/profile.png" alt="profile"></a>
+                            <a href="../login/index.html"><p>나의여행</p></a>
+                        </div>
+                        <div id="cart">
+                            <a href="../login/index.html"><img src="../images/cart.png" alt="cart"></a>
+                            <a href="../login/index.html"><p>장바구니</p></a>
+                        </div>
+                        <div id="cart_num">
+                            <p>2</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div id="event">
+               <nav id="event_nav">
+                   <ul>
+                       <li class="on all">전체이벤트</li>
+                       <li class="ing">진행중인 이벤트</li>
+                       <li class="end">종료된 이벤트</li>
+                   </ul>
+               </nav>
+               <div id="event_list">
+                   <ul>
+                        <li class="card ing">
+                            <a href="event1/index.html">
+                                <div class="photo">
+                                    <img src="images/e1.png" alt="event">
+                                </div>
+                                <div class="info">
+                                    <p class="title">또박투어 첫 여행 10% 할인!  </p>
+                                    <p class="date">2021.10.01 ~ 10.15</p>
+                                    <ul class="tag">
+                                        <li>#할인이벤트</li>
+                                        <li>#첫여행</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card ing">
+                            <a href="event2/index.html">
+                                <div class="photo">
+                                    <img src="images/e2.png" alt="event">
+                                </div>
+                                <div class="info">
+                                    <p class="title">캐리어 증정 퀴즈 이벤트</p>
+                                    <p class="date">2021.09.01 ~ 11.30</p>
+                                    <ul class="tag">
+                                        <li>#퀴즈이벤트</li>
+                                        <li>#캐리어증정</li>
+                                        <li>#또바기친구들</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card ing">
+                            <a href="event3/index.html">
+                                <div class="photo">
+                                    <img src="images/e3.png" alt="event">
+                                </div>
+                                <div class="info">
+                                    <p class="title">백신접종 인증 이벤트</p>
+                                    <p class="date">2021.10.01 ~ 2022.01.31</p>
+                                    <ul class="tag">
+                                        <li>#인증이벤트</li>
+                                        <li>#백신접종</li>
+                                        <li>#쌍따봉</li>
+                                        <li>#할인쿠폰</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                       <li class="card ing">
+                           <a href="event4/index.html">
+                                <div class="photo">
+                                    <img src="images/e4.png" alt="event">
+                                </div>
+                                <div class="info">
+                                    <p class="title">베스트 후기 선정 이벤트</p>
+                                    <p class="date">2021.10.01 ~ 12.31</p>
+                                    <ul class="tag">
+                                        <li>#후기이벤트</li>
+                                        <li>#적립금</li>
+                                        <li>#베스트후기</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card ing">
+                            <a href="event5/index.html">
+                                <div class="photo">
+                                    <img src="images/e5.png" alt="event">
+                                </div>
+                                <div class="info">
+                                    <p class="title">또바기 친구들 그리기 이벤트</p>
+                                    <p class="date">2021.10.08 ~ 11.18</p>
+                                    <ul class="tag">
+                                        <li>#참여이벤트</li>
+                                        <li>#이모티콘</li>
+                                        <li>#또바기친구들</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card end">
+                            <a href="#none">
+                                <div class="photo"> 
+                                    <img src="images/e6.png" alt="event">
+                                </div>
+                                <div class="info">
+                                    <p class="title">유튜브 구독 이벤트</p>
+                                    <p class="date">2021.08.01 ~ 09.01</p>
+                                    <ul class="tag">
+                                        <li>#구독이벤트</li>
+                                        <li>#유튜브</li>
+                                        <li>#좋댓구알</li>
+                                        <li>#또바기친구들</li>
+                                    </ul>
+                                </div>
+                                <div class="ended">
+                                    <p>종료된 이벤트입니다</p>
+                                </div>
+                            </a>
+                        </li>
+                   </ul>
+               </div>
+            </div>
+            <!-- footer -->
+            <footer>
+                <div id="footer">
+                    <div id="charimg2">
+                        <img src="../images/3.png" alt="3">
+                    </div>
+                    <div id="footlogo">
+                        <img src="../images/typelogo3.png" alt="typelogo3">
+                    </div>
+
+                    <div id="foot1">
+                        또박(주) 대표이사 김은별<br>
+                        경기도 수원시 장안구 정조로 940-1<br>
+                        (영화동, 연세IT미래교육원 빌딩) <br>
+                        Tel : 031-256-2662<br>
+                        Fax : 031-256-2663<br>
+                    </div>
+
+                    <div id="foot2">
+                        사업자번호 : 479-87-00056 <br>
+                        개인정보보호책임자 : 김한나 tladhgks@naver.com <br>
+                        Copyright © Ttoback 2020-2021 All Rights Reserved.
+                    </div>
+
+                    <div id="foot3">
+                        상담문의 <br>
+                        <div id="callnum">1544-1234</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div id="footer_bg"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+#banner #btn img{
+    position: absolute;
+    top: 1800px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}

@@ -1,0 +1,164 @@
+#wrapper {
+  height: 3360px;
+}
+
+#design h1 {
+  position: fixed;
+  width: 800px;
+  left: -700px;
+  bottom: 790px;
+  z-index: -1;
+}
+
+#design h3 {
+  font-family: 'Noto Sans KR';
+  font-size: 1.3rem;
+  padding: 0 10px;
+}
+
+#design nav {
+  width: 1200px;
+  top: 46px;
+  left: 140px;
+}
+
+#design nav li {
+  margin-right: 20px;
+}
+
+#slide {
+  position: fixed;
+  width: 100%;
+  height: 900px;
+  padding-top: 120px;
+  top: 0;
+  left: 60px;
+  -webkit-transform-origin: 20px 100px;
+          transform-origin: 20px 100px;
+}
+
+#slide > ul {
+  width: 6000px;
+  height: 700px;
+}
+
+.project {
+  float: left;
+  margin-right: 80px;
+  position: relative;
+  width: 400px;
+  height: 770px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.project:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.project.on {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  z-index: 99;
+}
+
+.project.on .info {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.project.off {
+  opacity: 50%;
+}
+
+.info {
+  position: absolute;
+  left: 105%;
+  bottom: 0;
+  width: 400px;
+  background: white;
+  border: 1px solid #141414;
+  padding: 40px;
+  z-index: 995;
+  display: none;
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+
+.project.on .info {
+  display: block;
+}
+
+.frame {
+  width: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.inner {
+  width: 370px;
+  height: 740px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding-top: 5px;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.inner img {
+  position: absolute;
+  width: 370px;
+}
+
+.inner img:nth-child(2) {
+  top: 50px;
+  left: -100%;
+}
+
+.info img {
+  position: absolute;
+  width: 40px;
+  right: 20px;
+  bottom: 20px;
+}
+
+.link {
+  color: #141414;
+  background: white;
+  border: 1px solid #141414;
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.link.r {
+  width: 160px;
+  background-color: #6CFF84;
+}
+
+.link:hover {
+  background: #141414;
+  color: white;
+}
+
+.vscroll {
+  position: absolute;
+  top: 240px;
+  left: 40px;
+  z-index: 9999;
+  opacity: 0;
+}
+/*# sourceMappingURL=uiux.css.map */

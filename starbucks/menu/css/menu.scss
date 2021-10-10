@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+$black: #262626;
+$green: #007042;
+$ivory: #F6F5EF;
+$gray: #EFEFEF;
+$shadow : 2px 2px 10px rgba(0, 0, 0, 0.05);
+
+#wrapper{
+    width: 100%;
+}
+#menu{
+    width: 1280px;
+    padding-top: 100px;
+    height: fit-content;
+    margin: 0 auto;
+}
+#title{
+    margin: 20px 40px 0;
+}
+.box{
+    width: 1200px;
+    height: fit-content;
+    background: white;
+    box-shadow: $shadow;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px 40px;
+    position: relative;
+}
+#menu h4{
+    color: $black;
+}
+.select{
+    height: 220px;
+    padding: 10px 40px;
+}
+.select>ul{
+    clear: both;
+    width: 1100px;
+    height: 40px;
+    margin: 20px 0;
+}
+.select li{
+    float: left;
+    margin-right: 20px;
+    height: 40px;
+    line-height: 40px;
+}
+.option{
+    width: 80px;
+}
+input[type="checkbox"]{
+    float: left;
+    margin: 13px 8px 13px 0;
+    width: 14px;
+    height: 14px;
+    opacity: 0.8;
+}
+.select li .p3{
+    float: left;
+}
+.select input[type="text"]{
+    width: 200px;
+    height: 25px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    border-radius: 3px;
+    padding: 0 5px;
+    font-size: 14px;
+    margin-right: 8px;
+}
+.select button{
+    width: 50px;
+    height: 26px;
+    background: $green;
+    color: white;
+    padding: 0;
+    font-size: 12px;
+    margin-top: 5px;
+    border: none;
+    transition: 0s;
+}
+.select button:hover{
+    opacity: 0.7;
+}
+select{
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    outline: none;
+    font-size: 14px;
+    width: 180px;
+    height: 30px;
+    padding-left: 5px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px;
+}
+option{
+    font-size: 14px;
+}
+.items{
+    width: 1120px;
+}
+.items ul{
+    width: 1120px;
+    gap: 20px;
+    display: none;
+}
+.items ul.on{
+    display: flex;
+}
+.items li{
+    float: left;
+    margin-top: 40px;
+    position: relative;
+}
+.items .p1{
+    text-align: center;
+    font-size: 16px;
+}
+.items~button{
+    display: block;
+    margin: 40px auto 0;
+}
+.photo{
+    width: 265px;
+    height: 265px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.items img{
+    width: 265px;
+    transition: 0.3s;
+}
+.photo:hover img{
+    transform: scale(1.1);
+}
+.new{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    text-align: center;
+    background: #B79855;
+    line-height: 50px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}

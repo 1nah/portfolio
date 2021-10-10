@@ -1,0 +1,59 @@
+body {
+  overflow: hidden;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+#activity {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  padding: 80px 150px;
+}
+
+#activity li {
+  position: relative;
+  float: left;
+  margin: 0 30px;
+}
+
+#activity li img {
+  height: 800px;
+}
+
+#activity p {
+  font-size: 60px;
+  position: absolute;
+  font-weight: 900;
+  text-align: center;
+  line-height: 70px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+  color: #6CFF84;
+}
+
+#activity li:nth-child(1) p {
+  top: 42%;
+}
+
+#activity li:nth-child(2) p {
+  top: 51%;
+  font-size: 55px;
+  line-height: 60px;
+}
+
+#activity li.on {
+  z-index: 9999;
+}
+
+#activity li.on p {
+  display: block;
+}
+/*# sourceMappingURL=activity.css.map */

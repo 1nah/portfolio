@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARBUCKS | MENU</title>
+
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- css  -->
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="css/menu.css">
+    
+    <!-- js  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../script/default.js"></script>
+    <script src="script/menu.js"></script>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <nav id="top_nav">
+                <ul>
+                    <li><a href="../login/index.html">Log In</a></li>
+                    <li><a href="#none">My Starbucks</a></li>
+                    <li><a href="#none">Customer Service</a></li>
+                    <li id="search">
+                        <input type="text">
+                        <img src="../images/search.png" alt="search"></a>
+                    </li>
+                </ul>
+            </nav>
+            <nav id="main_nav">
+                <div id="nav_bg"></div>
+                <ul>
+                    <li><a href="../coffee/index.html">COFFEE</a>
+                        <ul class="sub_nav">
+                            <li><a href="../coffee/index.html">커피</a>
+                                <ul>
+                                    <li><a href="#none">스타벅스 원두</a></li>
+                                    <li><a href="#none">스타벅스 비아</a></li>
+                                    <li><a href="#none">스타벅스 오라가미</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">스타벅스 리저브™</a>
+                                <ul>
+                                    <li><a href="#none">RESERVE MAGAZINE</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">에스프레소 음료</a>
+                                <ul>
+                                    <li><a href="#none">도피오</a></li>
+                                    <li><a href="#none">에스프레소 마키아또</a></li>
+                                    <li><a href="#none">아메리카노</a></li>
+                                    <li><a href="#none">마키아또</a></li>
+                                    <li><a href="#none">카푸치노</a></li>
+                                    <li><a href="#none">라떼</a></li>
+                                    <li><a href="#none">모카</a></li>
+                                    <li><a href="#none">리스트레또 비안코</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">최상의 커피를 즐기는 법</a>
+                                <ul>
+                                    <li><a href="#none">커피 프레스</a></li>
+                                    <li><a href="#none">푸어 오버</a></li>
+                                    <li><a href="#none">아이스 푸어 오버</a></li>
+                                    <li><a href="#none">커피 메이커</a></li>
+                                    <li><a href="#none">리저브를 매장에서 즐기는 법</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">커피 이야기</a>
+                                <ul>
+                                    <li><a href="#none">스타벅스 로스트 스팩트럼</a></li>
+                                    <li><a href="#none">최상의 아라비카 원두</a></li>
+                                    <li><a href="#none">한 잔의 커피가 완성되기까지</a></li>
+                                    <li><a href="#none">클로버® 커피 추출 시스템</a></li>
+                                    <li><a href="#none">스타벅스 디카페인</a></li>
+                                </ul>
+                            </li> 
+                            <li id="fit"><a href="../coffee/index.html">나와 어울리는 커피</a>
+                            </li>
+                        </ul>
+                    </li>  
+                    <li><a href="index.html">MENU</a> 
+                        <ul class="sub_nav">
+                            <li><a href="#none">음료</a>
+                                <ul>
+                                    <li><a href="#none">콜드 브루</a></li>
+                                    <li><a href="#none">브루드 커피</a></li>
+                                    <li><a href="#none">에스프레소</a></li>
+                                    <li><a href="#none">프라푸치노</a></li>
+                                    <li><a href="#none">블렌디드</a></li>
+                                    <li><a href="#none">스타벅스 피지오</a></li>
+                                    <li><a href="#none">티(티바나)</a></li>
+                                    <li><a href="#none">스타벅스 주스(병음료)</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="index.html">푸드</a> 
+                                <ul>
+                                    <li><a href="index.html">브레드</a></li>
+                                    <li><a href="index.html">케이크</a></li>
+                                    <li><a href="index.html">샌드위치 & 샐러드</a></li>
+                                    <li><a href="index.html">따뜻한 푸드</a></li>
+                                    <li><a href="index.html">과일 & 요거트</a></li>
+                                    <li><a href="index.html">스낵 & 미니 디저트</a></li>
+                                    <li><a href="index.html">아이스크림</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">상품</a>
+                                <ul>
+                                    <li><a href="#none">머그</a></li>
+                                    <li><a href="#none">글라스</a></li>
+                                    <li><a href="#none">플라스틱 텀블러</a></li>
+                                    <li><a href="#none">스테인리스 텀블러</a></li>
+                                    <li><a href="#none">보온병</a></li>
+                                    <li><a href="#none">액세서리</a></li>
+                                    <li><a href="#none">커피 용품</a></li>
+                                    <li><a href="#none">패키지 티 (티바나)</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">카드</a>
+                                <ul>
+                                    <li><a href="#none">실물카드</a></li>
+                                    <li><a href="#none">e-Gift 카드</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">메뉴이야기</a>
+                                <ul>
+                                    <li><a href="#none">나이트로 콜드브루</a></li>
+                                    <li><a href="#none">콜드 브루</a></li>
+                                    <li><a href="#none">스타벅스 티바나</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">STORE</a>
+                        <ul class="sub_nav">
+                            <li><a href="#none">매장찾기</a>
+                                <ul>
+                                    <li><a href="#none">퀵 검색</a></li>
+                                    <li><a href="#none">지역 검색</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">드라이브 스루 매장</a>
+                            </li>
+                            <li><a href="#none">스타벅스 리저브™ 매장</a>
+                            </li>
+                            <li><a href="#none">커뮤니티 스토어 매장</a>
+                            </li>
+                            <li><a href="#none">매장 이야기</a>
+                                <ul>
+                                    <li><a href="#none">티바나 바 매장</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="../reward/index.html">REWARDS</a>
+                        <ul class="sub_nav">
+                            <li><a href="../reward/index.html">스타벅스 리워드</a>
+                                <ul>
+                                    <li><a href="../reward/index.html">스타벅스 리워드 소개</a></li>
+                                    <li><a href="../reward/index.html">등급 및 혜택</a></li>
+                                    <li><a href="../reward/index.html">스타벅스 별</a></li>
+                                    <li><a href="../reward/index.html">자주 하는 질문</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">스타벅스 카드</a>
+                                <ul>
+                                    <li><a href="#none">스타벅스 카드 소개</a></li>
+                                    <li><a href="#none">스타벅스 카드 갤러리</a></li>
+                                    <li><a href="#none">등록 및 조회</a></li>
+                                    <li><a href="#none">충전 및 이용안내</a></li>
+                                    <li><a href="#none">분실신고/환불신청</a></li>
+                                    <li><a href="#none">자주 하는 질문</a></li>
+                                </ul> 
+                            </li>
+                            <li><a href="#none">스타벅스 e-Gift Card</a>
+                                <ul>
+                                    <li><a href="#none">스타벅스 e-Gift Card 소개</a></li>
+                                    <li><a href="#none">이용안내</a></li>
+                                    <li><a href="#none">선물하기</a></li>
+                                    <li><a href="#none">자주 하는 질문</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="logo">
+                        <a href="../index.html"><img src="../images/logo.png" alt="logo"></a>
+                    </li>
+                    <li><a href="#none">RESPONSIBILITY</a>
+                        <ul class="sub_nav">
+                            <li><a href="#none">사회공헌 캠페인 소개</a>
+                            </li>
+                            <li><a href="#none">지역 사회 참여 활동</a>
+                                <ul>
+                                    <li><a href="#none">희망배달 캠페인</a></li>
+                                    <li><a href="#none">재능기부 카페 소식</a></li>
+                                    <li><a href="#none">커뮤니티 스토어</a></li>
+                                    <li><a href="#none">청년 지원 프로그램</a></li>
+                                    <li><a href="#none">우리 농산물 사랑 캠페인</a></li>
+                                    <li><a href="#none">우리 문화 지키기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">환경보호 활동</a>
+                                <ul>
+                                    <li><a href="#none">친환경 활동</a></li>
+                                    <li><a href="#none">일회용 컵 없는 매장</a></li>
+                                    <li><a href="#none">커피 원두 재활용</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">윤리 구매</a>
+                                <ul>
+                                    <li><a href="#none">윤리적 원두 구매</a></li>
+                                    <li><a href="#none">공정무역 인증</a></li>
+                                    <li><a href="#none">커피 농가 지원 활동</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">글로벌 사회 공헌</a>
+                                <ul>
+                                    <li><a href="#none">윤리경영 보고서</a></li>
+                                    <li><a href="#none">스타벅스 재단</a></li>
+                                    <li><a href="#none">지구촌 봉사의 달</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="../event/index.html">WHAT’S NEW</a>
+                        <ul class="sub_nav">
+                            <li><a href="../event/index.html">이벤트</a>
+                                <ul>
+                                    <li><a href="../event/index.html">전체</a></li>
+                                    <li><a href="../event/index.html">스타벅스 카드</a></li>
+                                    <li><a href="../event/index.html">스타벅스 리워드</a></li>
+                                    <li><a href="../event/index.html">온라인</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../event/index.html">매장별 이벤트</a>
+                                <ul>
+                                    <li><a href="../event/index.html">일반 매장</a></li>
+                                    <li><a href="../event/index.html">신규 매장</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">뉴스</a>
+                                <ul>
+                                    <li><a href="#none">전체</a></li>
+                                    <li><a href="#none">상품 출시</a></li>
+                                    <li><a href="#none">스타벅스와 문화</a></li>
+                                    <li><a href="#none">스타벅스 사회공헌</a></li>
+                                    <li><a href="#none">스타벅스 카드출시</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">월페이퍼</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">NOTICE</a>
+                        <ul class="sub_nav">
+                            <li><a href="#none">전체 공지사항</a>
+                            </li>
+                            <li><a href="#none">메뉴 공지사항</a>
+                                <ul>
+                                    <li><a href="#none">일반메뉴</a></li>
+                                    <li><a href="#none">신메뉴</a></li>
+                                    <li><a href="#none">시즌메뉴</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">매장 공지사항</a>
+                                <ul>
+                                    <li><a href="#none">일반매장</a></li>
+                                    <li><a href="#none">신규매장</a></li>
+                                    <li><a href="#none">사이렌오더</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">온라인 공지사항</a>
+                                <ul>
+                                    <li><a href="#none">시스템 개선 및 점검</a></li>
+                                    <li><a href="#none">이용약관 개정</a></li>
+                                    <li><a href="#none">모바일 어플리케이션</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#none">스타벅스 Gift</a>
+                                <ul>
+                                    <li><a href="#none">Gift 카드</a></li>
+                                    <li><a href="#none">e-Gift 카드</a></li>
+                                    <li><a href="#none">Gift 배송</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="menu">
+            <div id="title">
+                <h1>푸드</h1>
+            </div>
+            <div class="box select">
+                <ul>
+                    <li class="option">
+                        <h4>카테고리</h4>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <p class="p3">전체 상품</p>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked>
+                        <p class="p3">브레드</p>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked>
+                        <p class="p3">케이크</p>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked>
+                        <p class="p3">샌드위치 & 샐러드</p>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <p class="p3">따뜻한 푸드</p>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <p class="p3">과일&요거트</p>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <p class="p3">스낵 & 미니디저트</p>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <p class="p3">아이스크림</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="option">
+                        <h4>테마메뉴</h4>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <p class="p3">블랙 글레이즈드 라떼 시즌</p>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <p class="p3">플랜트 베이스드 푸드</p>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <p class="p3">스타벅스 홀케이크</p>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <p class="p3">제주 전용 푸드</p>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <p class="p3">용인 에버랜드 전용 푸드</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="option">
+                        <h4>검색하기</h4>
+                    </li>
+                    <li>
+                        <input type="text">
+                        <button>검색</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="box bread">
+                <div id="sub_title">
+                    <h2>브레드</h2>
+                </div>
+                <select>
+                    <option>
+                        <p class="p4">
+                            정렬 기준
+                        </p>
+                    </option>
+                    <option>
+                        <p class="p4">
+                            신메뉴 순으로 정렬
+                        </p>
+                    </option>
+                    <option>
+                        <p class="p4">
+                            추천 순으로 정렬
+                        </p>
+                    </option>
+                    <option>
+                        <p class="p4">
+                            인기 순으로 정렬
+                        </p>
+                    </option>
+                </select>
+                <div class="items">
+                    <ul class="on">
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/b1.jpg" alt="b1">
+                                </div>
+                                <p class="p1">가나슈 품은 초콜릿 스콘</p>
+                                <div class="new">NEW</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/b2.jpg" alt="b2">
+                                </div>
+                                <p class="p1">쿠키 블루베리 잼 머핀</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/b3.jpg" alt="b3">
+                                </div>
+                                <p class="p1">담백한 플레인 베이글</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/b4.jpg" alt="b4">
+                                </div>
+                                <p class="p1">리얼 블루베리 베이글</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/b5.jpg" alt="b5">
+                                </div>
+                                <p class="p1">리얼 치즈 베이글</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/b6.jpg" alt="b6">
+                                </div>
+                                <p class="p1">바질 토마토 크림치즈 베이글</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/b7.jpg" alt="b7">
+                                </div>
+                                <p class="p1">앙 녹차 베이글</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/b8.jpg" alt="b8">
+                                </div>
+                                <p class="p1">미니 클래식 스콘</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/b9.jpg" alt="b9">
+                                </div>
+                                <p class="p1">클래식 스콘</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/b10.jpg" alt="b10">
+                                </div>
+                                <p class="p1">트리플 미니 스콘</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/b11.jpg" alt="b11">
+                                </div>
+                                <p class="p1">거문 오름 크루아상</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/b12.jpg" alt="b12">
+                                </div>
+                                <p class="p1">리프 파이</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button>더보기</button>
+            </div>
+            <div class="box cake">
+                <div id="sub_title">
+                    <h2>케이크</h2>
+                </div>
+                <select>
+                    <option>
+                        <p class="p4">
+                            정렬 기준
+                        </p>
+                    </option>
+                    <option>
+                        <p class="p4">
+                            신메뉴 순으로 정렬
+                        </p>
+                    </option>
+                    <option>
+                        <p class="p4">
+                            추천 순으로 정렬
+                        </p>
+                    </option>
+                    <option>
+                        <p class="p4">
+                            인기 순으로 정렬
+                        </p>
+                    </option>
+                </select>
+                <div class="items">
+                    <ul class="on">
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/c1.jpg" alt="c1">
+                                </div>
+                                <p class="p1">몽블랑 치즈 케이크</p>
+                                <div class="new">NEW</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/c2.jpg" alt="c2">
+                                </div>
+                                <p class="p1">7 레이어 가나슈 케이크</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/c3.jpg" alt="c3">
+                                </div>
+                                <p class="p1">The 촉촉 초콜릿 생크림 케이크</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/c4.jpg" alt="c4">
+                                </div>
+                                <p class="p1">슈크림 가득 바움쿠헨</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/c5.jpg" alt="c5">
+                                </div>
+                                <p class="p1">레드벨벳 크림치즈 케이크</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/c6.jpg" alt="c6">
+                                </div>
+                                <p class="p1">마스카포네 티라미수 케이크</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/c7.jpg" alt="c7">
+                                </div>
+                                <p class="p1">밀당 에그 타르트</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/c8.jpg" alt="c8">
+                                </div>
+                                <p class="p1">밀당 초코 타르트</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/c9.jpg" alt="c9">
+                                </div>
+                                <p class="p1">번트 치즈케이크</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/c10.jpg" alt="c10">
+                                </div>
+                                <p class="p1">부드러운 생크림 카스텔라</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/c11.jpg" alt="c11">
+                                </div>
+                                <p class="p1">부드러운 티라미수 롤</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/c12.jpg" alt="c12">
+                                </div>
+                                <p class="p1">블루베리 쿠키 치즈 케이크</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button>더보기</button>
+            </div>
+            <div class="box salad">
+                <div id="sub_title">
+                    <h2>샌드위치 & 샐러드</h2>
+                </div>
+                <select>
+                    <option>
+                        <p class="p4">
+                            정렬 기준
+                        </p>
+                    </option>
+                    <option>
+                        <p class="p4">
+                            신메뉴 순으로 정렬
+                        </p>
+                    </option>
+                    <option>
+                        <p class="p4">
+                            추천 순으로 정렬
+                        </p>
+                    </option>
+                    <option>
+                        <p class="p4">
+                            인기 순으로 정렬
+                        </p>
+                    </option>
+                </select>
+                <div class="items">
+                    <ul class="on">
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/s1.jpg" alt="s1">
+                                </div>
+                                <p class="p1">감바스 파스타 밀 박스</p>
+                                <div class="new">NEW</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/s2.jpg" alt="s2">
+                                </div>
+                                <p class="p1">올라 쿠바노 샌드위치</p>
+                                <div class="new">NEW</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/s3.jpg" alt="s3">
+                                </div>
+                                <p class="p1">쉬림프 코코넛 샐러드 밀 박스</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/s4.jpg" alt="s4">
+                                </div>
+                                <p class="p1">커리 치킨 샐러드 밀 박스</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/s5.jpg" alt="s5">
+                                </div>
+                                <p class="p1">B.C.L.T. 샌드위치 밀 박스</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/s6.jpg" alt="s6">
+                                </div>
+                                <p class="p1">B.E.L.T. 샌드위치</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/s7.jpg" alt="s7">
+                                </div>
+                                <p class="p1">단호박 에그 샌드위치</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/s8.jpg" alt="s8">
+                                </div>
+                                <p class="p1">돌코롬 쫍지롱 와플 샌드</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/s9.jpg" alt="s9">
+                                </div>
+                                <p class="p1">리코타 치즈 바게트 샌드위치</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/s10.jpg" alt="s10">
+                                </div>
+                                <p class="p1">바비큐 치킨 치즈 치아바타</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/s11.jpg" alt="s11">
+                                </div>
+                                <p class="p1">베이컨 치즈 토스트</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="photo">
+                                    <img src="images/s12.jpg" alt="s12">
+                                </div>
+                                <p class="p1">브렉퍼스트 잉글리쉬 머핀</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button>더보기</button>
+            </div>
+        </div>
+        <footer>
+            <section id="notice">
+                <ul>
+                    <li><a href="#none"><h4>공지사항</h4></a>
+                        <ul>
+                            <li><a href="#none">추석 연휴 매장 영업시간 변경 안내</a></li>
+                            <li><a href="#none">시스템 개선 및 점검 안내</a></li>
+                            <li><a href="#none">사이렌 오더 음료 기본 설정 변경 안내 (ICED → HOT)</a></li>
+                            <li><a href="#none">스타벅스 카드 이용약관 개정 안내</a></li>
+                            <li><a href="#none">추석 연휴 매장 영업시간 변경 안내</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../event/index.html"><h4>이벤트</h4></a>
+                        <ul>
+                            <li><a href="../event/index.html">추석 e-Gift 선물하기 이벤트</a></li>
+                            <li><a href="../event/index.html">스타벅스 현대카드 9월 한정 혜택</a></li>
+                            <li><a href="../event/index.html">Autumn Barista Favorite</a></li>
+                            <li><a href="../event/index.html">e-Gift Item 보너스 스타 이벤트</a></li>
+                            <li><a href="../event/index.html">추석 e-Gift 선물하기 이벤트</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <div class="line"></div>
+            <section id="footer_menu">
+                <ul>
+                    <li><a href="#none"><span>개인정보처리방침</span></a></li>
+                    <li>|</li> 
+                    <li><a href="#none">영상정보처리기기 운영관리방침</a></li>
+                    <li>|</li> 
+                    <li><a href="#none">홈페이지 이용약관</a></li>
+                    <li>|</li> 
+                    <li><a href="#none"> 위치정보 이용약관</a></li>
+                    <li>|</li> 
+                    <li><a href="#none">스타벅스 카드 이용약관</a></li>
+                    <li>|</li> 
+                    <li><a href="#none">비회원 이용약관</a></li>
+                    <li>|</li>
+                    <li><a href="#none">My DT Pass 서비스 이용약관</a></li>
+                    <li>|</li>
+                    <li><a href="#none"> 윤리경영 핫라인</a></li>
+                </ul>
+            </section>
+            <div class="line"></div>
+            <section id="footer_nav">
+                <div id="footerlogo">
+                    <a href="../index.html">
+                        <img src="../images/footer_logo.png" alt="footer_logo">
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#none">COMPANY</a>
+                            <ul>
+                                <li><a href="#none">한눈에 보기</a></li>
+                                <li><a href="#none">스타벅스 사명</a></li>
+                                <li><a href="#none">스타벅스 소개</a></li>
+                                <li><a href="#none">국내 뉴스룸</a></li>
+                                <li><a href="#none">세계의 스타벅스</a></li>
+                                <li><a href="#none">글로벌 뉴스룸</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#none">CORPORATE SALES</a>
+                            <ul>
+                                <li><a href="#none">단체 및 기업 구매 안내</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#none">PARTNERSHIP</a>
+                            <ul>
+                                <li><a href="#none">신규 입점 제의</a></li>
+                                <li><a href="#none">협력 고객사 등록신청</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#none">ONLINE COMMUNITY</a>
+                            <ul>
+                                <li><a href="#none">페이스북</a></li>
+                                <li><a href="#none">트위터</a></li>
+                                <li><a href="#none">유튜브</a></li>
+                                <li><a href="#none">인스타그램</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#none">RECRUIT</a>
+                            <ul>
+                                <li><a href="#none">채용 소개</a></li>
+                                <li><a href="#none">채용 지원하기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <ul>
+                    <li>
+                        <p class="p3">
+                            <span>사업자등록번호</span>
+                            201-81-21515 
+                        </p>
+                    </li>
+                    <li>
+                        <p class="p3">
+                            <span>(주)스타벅스커피 코리아 대표이사 </span>
+                            송 데이 비드 호섭
+                        </p>
+                    </li>
+                    <li>
+                        <p class="p3">
+                            <span>TEL</span>
+                            1522-3232 
+                        </p>
+                    </li>
+                    <li>
+                        <p class="p3">
+                            <span>개인정보 책임자</span>
+                            하익성
+                        </p>
+                    </li>
+                </ul>
+                <p class="p3" id="copy">
+                    ⓒ 2021 Starbucks Coffee Company. All Rights Reserved.
+                </p>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>

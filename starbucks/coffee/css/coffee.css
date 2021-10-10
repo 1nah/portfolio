@@ -1,0 +1,186 @@
+#wrapper {
+  width: 100%;
+  height: 1460px;
+  overflow: hidden;
+}
+
+#coffee {
+  width: 1280px;
+  height: 800px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+#title {
+  margin: 20px 40px;
+}
+
+#container {
+  width: 1280px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#container > ul {
+  width: 5120px;
+}
+
+#container > ul > li {
+  margin: 0 40px;
+  float: left;
+}
+
+.box {
+  width: 1200px;
+  height: 580px;
+  background: white;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+}
+
+.choice img {
+  width: 200px;
+}
+
+.num {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.num img {
+  width: 50px;
+}
+
+.num h2 {
+  color: white;
+  font-family: sans-serif;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  margin-top: -55px;
+}
+
+.box > h2 span {
+  font-size: 26px;
+  font-weight: 700;
+  color: #007042;
+}
+
+.choice {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.choice li {
+  float: left;
+  margin: 60px 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.choice li.on {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.choice li.off {
+  opacity: 0.5;
+}
+
+.btn {
+  clear: both;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.btn button {
+  float: left;
+  margin: 0 10px;
+}
+
+.result {
+  padding: 0;
+}
+
+#text {
+  width: 1200px;
+  height: 140px;
+  border-radius: 10px 10px 0 0;
+  background-color: #007042;
+  padding-top: 35px;
+}
+
+#text > * {
+  color: white;
+}
+
+#photo {
+  width: 600px;
+  height: 440px;
+  float: left;
+  padding: 10px 0 0 180px;
+}
+
+#info {
+  width: 600px;
+  height: 440px;
+  float: left;
+  margin: 80px 0;
+}
+
+#info > * {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#info h2 {
+  margin: 0;
+}
+
+#info .line {
+  width: 480px;
+}
+
+#info .btn {
+  margin: 40px 0 0 -10px;
+}
+
+#modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: none;
+}
+
+#popup {
+  width: 440px;
+  height: 180px;
+  background: white;
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+  top: 400px;
+  text-align: center;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+  padding-top: 60px;
+}
+
+#popup h3 {
+  color: #262626;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=coffee.css.map */
